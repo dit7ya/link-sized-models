@@ -46,10 +46,8 @@ Story scores are on the fixed 500k-character TinyStories validation slice
   and re-checking them.
 
 ## Deployment
-Cloudflare Pages project `link-models`, Git-linked, serves `site/`. Production
-branch `main`; work happens on `tiers` and is pushed to both
-(`git push origin tiers` then `git push origin tiers:main`). Run
-`tools/check.py` first.
+Cloudflare Pages project `link-models` serves `site/` from the `main` branch.
+Run `tools/check.py` before pushing.
 
 ## Working notes
 - Report measured numbers only; label estimates as estimates.
