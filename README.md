@@ -151,8 +151,7 @@ they are scored on, are in [`docs/findings.md`](docs/findings.md).
 
 ## How this was built
 
-This was built with Fable 5.2 orchestrating other Claudes and Codex and Grok,
-with frequent prompting and steering for "taste".
+This was built with Fable 5.2 orchestrating other Claudes, Codex and Grok, with frequent prompting and steering by me for "taste".
 
 ## Credits
 
