@@ -1,0 +1,181 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="referrer" content="no-referrer">
+<title>A language model in a link</title>
+<style>
+:root{color-scheme:light dark;font-family:system-ui,sans-serif}
+html{padding-bottom:8.5em}
+body{margin:0;padding:1.5em 1em}
+body.nm{box-sizing:border-box;min-height:calc(100vh - 8.5em);min-height:calc(100svh - 8.5em);text-align:center;display:grid;place-items:center;font:500 clamp(1.5rem,7.5vw,3rem)/1.25 ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;overflow-wrap:anywhere}
+body.st{text-align:left;font:18px/1.6 Georgia,serif;max-width:34em;margin:0 auto;padding-top:2em}
+#ft{position:fixed;left:0;right:0;bottom:0;padding:.9em .5em calc(.7em + env(safe-area-inset-bottom));font:12px system-ui,sans-serif;text-align:center;background:Canvas;color:GrayText;border-top:1px solid #8884;z-index:2147483647}
+#ft a{color:inherit;margin:0 .5em}
+#again{display:block;margin:0 auto .8em;padding:.65em 1.4em;font:500 15px system-ui,sans-serif;color:#fff;background:#2563eb;border:0;border-radius:999px;cursor:pointer}
+#again:active{background:#1d4ed8}
+#src{display:none;text-align:left;max-height:40vh;overflow:auto;white-space:pre-wrap;word-break:break-all;margin:.5em 0 0;color:CanvasText}
+</style></head><body>
+<noscript>This page runs a tiny language model stored in its own link. It needs JavaScript.</noscript>
+<script>
+if(!location.hash){
+  location.replace(new URL('home/'+(location.protocol==='file:'?'index.html':''),location.href));
+}else{
+// DEFLATE-FALLBACK:START
+// Safari 16.0–16.3 has streams but no DecompressionStream. Keep the
+// compatibility decoder in the loader, so historical model URLs stay exact.
+function inflateZlib(input) {
+  var pos=2, bits=0, count=0, used=0, out=new Uint8Array(32768), limit=16*1024*1024;
+  function fail(){throw Error('Invalid or oversized zlib data')}
+  if(input.length<6||(input[0]&15)!==8||(input[0]>>4)>7||((input[0]<<8)+input[1])%31||(input[1]&32))fail();
+  function read(n){
+    while(count<n){if(pos>=input.length-4)fail();bits|=input[pos++]<<count;count+=8}
+    var v=bits&((1<<n)-1);bits>>>=n;count-=n;return v;
+  }
+  function emit(v){
+    if(used>=limit)fail();
+    if(used===out.length){var next=new Uint8Array(Math.min(limit,out.length*2));next.set(out);out=next}
+    out[used++]=v;
+  }
+  function tree(lengths){
+    var counts=Array(16).fill(0),next=Array(16).fill(0),maps=Array.from({length:16},()=>new Map),code=0;
+    for(var len of lengths){if(len<0||len>15)fail();counts[len]++}
+    counts[0]=0;
+    for(var n=1;n<=15;n++){code=(code+counts[n-1])*2;next[n]=code;if(code+counts[n]>(1<<n))fail()}
+    lengths.forEach(function(n,symbol){if(!n)return;var c=next[n]++,rev=0;for(var i=0;i<n;i++){rev=rev*2+(c&1);c>>>=1}maps[n].set(rev,symbol)});
+    return maps;
+  }
+  function symbol(t){var c=0;for(var n=1;n<=15;n++){c|=read(1)<<(n-1);if(t[n].has(c))return t[n].get(c)}fail()}
+  var lb=[3,4,5,6,7,8,9,10,11,13,15,17,19,23,27,31,35,43,51,59,67,83,99,115,131,163,195,227,258],
+      le=[0,0,0,0,0,0,0,0,1,1,1,1,2,2,2,2,3,3,3,3,4,4,4,4,5,5,5,5,0],
+      db=[1,2,3,4,5,7,9,13,17,25,33,49,65,97,129,193,257,385,513,769,1025,1537,2049,3073,4097,6145,8193,12289,16385,24577],
+      de=[0,0,0,0,1,1,2,2,3,3,4,4,5,5,6,6,7,7,8,8,9,9,10,10,11,11,12,12,13,13];
+  var final=0;
+  while(!final){
+    final=read(1);var type=read(2),lit,dist;
+    if(type===0){
+      bits=count=0;var size=read(16);if((size^read(16))!==65535)fail();
+      while(size--)emit(read(8));continue;
+    }
+    if(type===1){lit=tree(Array.from({length:288},(_,i)=>i<144?8:i<256?9:i<280?7:8));dist=tree(Array(32).fill(5))}
+    else if(type===2){
+      var nl=read(5)+257,nd=read(5)+1,nc=read(4)+4,cl=Array(19).fill(0),order=[16,17,18,0,8,7,9,6,10,5,11,4,12,3,13,2,14,1,15];
+      for(var j=0;j<nc;j++)cl[order[j]]=read(3);
+      var ct=tree(cl),lengths=[];
+      while(lengths.length<nl+nd){
+        var v=symbol(ct),repeat=1;
+        if(v===16){if(!lengths.length)fail();v=lengths[lengths.length-1];repeat=read(2)+3}
+        else if(v===17){v=0;repeat=read(3)+3}
+        else if(v===18){v=0;repeat=read(7)+11}
+        if(lengths.length+repeat>nl+nd)fail();while(repeat--)lengths.push(v);
+      }
+      if(!lengths[256])fail();lit=tree(lengths.slice(0,nl));dist=tree(lengths.slice(nl));
+    }else fail();
+    for(;;){
+      var v=symbol(lit);if(v<256){emit(v);continue}if(v===256)break;
+      if(v>285)fail();var length=lb[v-257]+read(le[v-257]),ds=symbol(dist);
+      if(ds>29)fail();var distance=db[ds]+read(de[ds]);if(distance>used)fail();
+      while(length--)emit(out[used-distance]);
+    }
+  }
+  if(pos!==input.length-4)fail();
+  var a=1,b=0;for(var i=0;i<used;i++){a=(a+out[i])%65521;b=(b+a)%65521}
+  var end=input.length-4,check=((input[end]*16777216)+(input[end+1]<<16)+(input[end+2]<<8)+input[end+3])>>>0;
+  if(((b<<16|a)>>>0)!==check)fail();
+  return out.slice(0,used);
+}
+if(typeof globalThis.DecompressionStream==='undefined'){
+  globalThis.DecompressionStream=class {
+    constructor(format){
+      if(format!=='deflate')throw Error('Only zlib/deflate is supported by this compatibility decoder');
+      var chunks=[],size=0;
+      return new TransformStream({transform(chunk){size+=chunk.length;if(size>2200000)throw Error('Compressed model too large');chunks.push(chunk)},flush(controller){var data=new Uint8Array(size),i=0;for(var chunk of chunks){data.set(chunk,i);i+=chunk.length}controller.enqueue(inflateZlib(data))}});
+    }
+  };
+}
+// DEFLATE-FALLBACK:END
+// Both /#base64url(program).data and /#NNNraw-programdata; see README.md.
+(function(){
+  var h=location.hash.slice(1), p, d, ft, src, raw;
+  function msg(t){document.body.style.textAlign='center';document.body.innerHTML='<p>'+t+'</p><p><a href="/home/">What is this?</a></p>'}
+  try{
+    // Browsers escape raw fragment characters. Decode exactly once, before slicing.
+    if(h.length>6600000)throw Error('fragment too long');
+    h=decodeURIComponent(h);
+    if(h.length>2200000)throw Error('fragment too long');
+    raw=/^\d{3}/.test(h);
+    if(raw){
+      var n=+h.slice(0,3);
+      if(!n||h.length<=n+3)throw Error('invalid program length');
+      p=h.slice(3,3+n);d=h.slice(3+n);
+      if(!/^[0-9]+$/.test(d))throw Error('invalid numeric weights');
+    }else{
+      var i=h.indexOf('.');
+      if(i<1){msg('This link carries no model. A model link looks like <code>/#program.weights</code>.');}
+      else{
+        if(!/^[A-Za-z0-9_=-]+$/.test(h.slice(0,i)))throw Error('invalid base64url');
+        p=h.slice(0,i).replace(/-/g,'+').replace(/_/g,'/');
+        p=new TextDecoder('utf-8',{fatal:true}).decode(Uint8Array.from(atob(p+'==='.slice((p.length+3)%4)),function(c){return c.charCodeAt(0)}));
+        d=h.slice(i+1);
+      }
+    }
+  }catch(e){p=null;msg('This link looks damaged (invalid program encoding or length).')}
+  // Outside <body>: model programs may replace body.innerHTML / innerText.
+  ft=document.createElement('div');ft.id='ft';
+  ft.innerHTML='<button id=again type=button>Write another</button>Everything here came from the link and runs on your device. '+
+    '<a href="/home/">What is this?</a><a href="#" id=vs>View source</a><a href="/home/#hire">Hire me</a><pre id=src></pre>';
+  document.documentElement.appendChild(ft);
+  src=ft.querySelector('#src');
+  src.textContent=p?'// program ('+new TextEncoder().encode(p).length+' bytes), run with d = '+d.length+' data characters\n'+p:'(no program)';
+  ft.onclick=function(e){e.stopPropagation();if(e.target.id=='again'&&typeof window.onclick==='function')window.onclick(e);if(e.target.id=='vs'){e.preventDefault();src.style.display=src.style.display=='block'?'none':'block'}};
+  addEventListener('hashchange',function(){location.reload()});
+  var state=window.__linkModel={generation:1,complete:false,first_output_ms:null}, last='';
+  function report(){
+    var text=document.body.innerText.trim(), streaming=text.endsWith('_');
+    if(!text&&document.body.querySelector('script'))return;
+    if(text&&state.first_output_ms===null)state.first_output_ms=performance.now();
+    state.text=streaming?text.slice(0,-1):text;state.complete=!streaming;
+    if(state.complete&&state.completed_ms==null)state.completed_ms=performance.now();
+    var key=state.generation+':'+state.complete+':'+text;
+    if(key===last)return;last=key;
+    if(parent!==window)parent.postMessage({type:'link-model-output',text:state.text,complete:state.complete,generation:state.generation},'*');
+  }
+  new MutationObserver(report).observe(document.body,{subtree:true,childList:true,characterData:true});
+  addEventListener('message',function(e){
+    if(e.source!==parent||parent===window||!e.data||e.data.type!=='link-model-generate')return;
+    state.generation++;state.complete=false;state.completed_ms=null;
+    if(e.data.trace&&raw)return trace(e.data.force||[]);
+    if(typeof window.onclick==='function')window.onclick(new MouseEvent('click'));
+    else{var button=document.querySelector('[data-generate],#generate,button');if(button)button.click()}
+  });
+  // For the launch page: run the program once, optionally forcing its first
+  // choices, and report the probabilities it had at each Math.random() call.
+  // Numeric programs leave those in the global `p`.
+  function trace(force){
+    var steps=[], rnd=Math.random;
+    Math.random=function(){
+      var q=window.p, t=0, s=0, i, c, v, r;
+      if(!Array.isArray(q)||steps.length>200)return rnd();
+      for(i=0;i<q.length;i++)t+=q[i];
+      c=force[steps.length];
+      if(c>=0&&c<q.length){for(i=0;i<c;i++)s+=q[i];v=(s+q[c]/2)/t}else v=rnd();
+      for(r=v*t,c=0;(r-=q[c])>0;c++);
+      steps.push({i:c,p:q.map(function(x){return Math.round(x/t*1e4)/1e4})});
+      return v;
+    };
+    try{window.onclick(new MouseEvent('click'))}finally{Math.random=rnd}
+    parent.postMessage({type:'link-model-trace',steps:steps,text:document.body.textContent,generation:state.generation},'*');
+  }
+  function initFailed(error){msg('The program in this link failed to initialise. The link may be damaged.');state.error=String(error);report()}
+  addEventListener('unhandledrejection',function(e){e.preventDefault();initFailed(e.reason)});
+  if(p){window.d=d;try{
+    var result=(0,eval)(p); // Indirect, non-strict eval: the numeric QR uses with(Math).
+    // Async payloads return their initialisation promise. Handle it immediately:
+    // older Firefox can still report it despite unhandledrejection.preventDefault().
+    if(result&&typeof result.then==='function')Promise.resolve(result).catch(initFailed);
+    if(raw)(window.onclick=function(){var t=g();document.body.className=t.length>60?'st':'nm';document.body.textContent=t})();
+    report();
+  }catch(e){msg('The program in this link failed: '+String(e).replace(/</g,'&lt;'))}}
+})();
+}
+</script>
+</body></html>

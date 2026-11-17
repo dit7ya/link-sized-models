@@ -1,0 +1,23 @@
+[project]
+name = "smol"
+version = "0.1.0"
+description = "How good can a language model be at each size a link allows?"
+requires-python = ">=3.11,<3.14"
+dependencies = [
+  "torch>=2.4",
+  "numpy",
+  "qrcode",
+  "pillow",
+  "zxing-cpp",
+]
+
+[tool.uv]
+package = false
+
+[tool.uv.sources]
+torch = [{ index = "pytorch-cpu" }]
+
+[[tool.uv.index]]
+name = "pytorch-cpu"
+url = "https://download.pytorch.org/whl/cpu"
+explicit = true

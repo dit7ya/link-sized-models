@@ -1,0 +1,6129 @@
+[
+  {
+    "url_sha256": "87031202fdc27f8afb9e4d89d6ca77671a14dfa054471ff7e2f5f16dfc8f22a4",
+    "model": "mlp31_h32_lsq_fine_s0",
+    "kind": "mlp",
+    "config": {
+      "e": 6,
+      "h": 32,
+      "levels": 31,
+      "k": 3,
+      "lsq": true
+    },
+    "params": 2161,
+    "levels": 31,
+    "program_chars": 444,
+    "weight_digits": 3223,
+    "payload_bytes": 3670,
+    "url_chars": 3693,
+    "qr_version": 31,
+    "data_bits": 14504,
+    "slack_bits": 240,
+    "segments": [
+      "alnum:22",
+      "byte:448",
+      "numeric:3223"
+    ],
+    "val_bpc": 2.2945885082085193,
+    "tensors": [
+      {
+        "name": "emb",
+        "shape": [
+          39,
+          6
+        ],
+        "scale": 0.2062,
+        "levels": 31
+      },
+      {
+        "name": "w1",
+        "shape": [
+          32,
+          19
+        ],
+        "scale": 0.1286,
+        "levels": 31
+      },
+      {
+        "name": "b1",
+        "shape": [
+          32
+        ],
+        "scale": 0.1749,
+        "levels": 31
+      },
+      {
+        "name": "w2",
+        "shape": [
+          39,
+          32
+        ],
+        "scale": 0.09238,
+        "levels": 31
+      },
+      {
+        "name": "b2",
+        "shape": [
+          39
+        ],
+        "scale": 0.134,
+        "levels": 31
+      }
+    ],
+    "zxing_exact": true,
+    "node_bpc": 2.2945885082085216,
+    "validation_chars": 2521,
+    "probability_comparisons": 98319,
+    "max_logprob_error": 1.0658141036401503e-14,
+    "novel_pct": 96.95,
+    "over24_pct": 5,
+    "samples": [
+      "glm-3.6-13b",
+      "llama-7b-char-largp4-vaeite7-s-a",
+      "deepsedellama-250",
+      "lla-2p5-7b-instruct",
+      "claude-opus-10b",
+      "kim-5.1-70b-instruct",
+      "llama-7-flaseenimo-fus-40",
+      "claude-llama-24b",
+      "kiep4-coder-3.5-iso",
+      "qwen-3.2-mediu2"
+    ],
+    "sample_count": 2000,
+    "sample_seed": 1,
+    "sample_temperature": 0.8,
+    "longest_sample": 32,
+    "rng_draws": 33716
+  },
+  {
+    "url_sha256": "de0d229fff80ce2b286df831de0c44a3b551ba50dd3b3a67e7a1eb33be4d4777",
+    "model": "mlp31_h32_lsq_fine_s2",
+    "kind": "mlp",
+    "config": {
+      "e": 6,
+      "h": 32,
+      "levels": 31,
+      "k": 3,
+      "lsq": true
+    },
+    "params": 2161,
+    "levels": 31,
+    "program_chars": 444,
+    "weight_digits": 3223,
+    "payload_bytes": 3670,
+    "url_chars": 3693,
+    "qr_version": 31,
+    "data_bits": 14504,
+    "slack_bits": 240,
+    "segments": [
+      "alnum:22",
+      "byte:448",
+      "numeric:3223"
+    ],
+    "val_bpc": 2.299934481229471,
+    "tensors": [
+      {
+        "name": "emb",
+        "shape": [
+          39,
+          6
+        ],
+        "scale": 0.2042,
+        "levels": 31
+      },
+      {
+        "name": "w1",
+        "shape": [
+          32,
+          19
+        ],
+        "scale": 0.1304,
+        "levels": 31
+      },
+      {
+        "name": "b1",
+        "shape": [
+          32
+        ],
+        "scale": 0.1683,
+        "levels": 31
+      },
+      {
+        "name": "w2",
+        "shape": [
+          39,
+          32
+        ],
+        "scale": 0.09276,
+        "levels": 31
+      },
+      {
+        "name": "b2",
+        "shape": [
+          39
+        ],
+        "scale": 0.1261,
+        "levels": 31
+      }
+    ],
+    "zxing_exact": true,
+    "node_bpc": 2.2999344812294638,
+    "validation_chars": 2521,
+    "probability_comparisons": 98319,
+    "max_logprob_error": 1.0658141036401503e-14,
+    "novel_pct": 95.9,
+    "over24_pct": 2.5,
+    "samples": [
+      "gpt-3.6-13b",
+      "ministral-2204222b-fpvb",
+      "kwonite-medium-1p5-1-1",
+      "deepsee-2p5-code-3",
+      "qwen3-70b",
+      "olmuct-1.6",
+      "lla-7.0-70b",
+      "mitabricks-gpla-1017",
+      "contar-nspot",
+      "date-10b"
+    ],
+    "sample_count": 2000,
+    "sample_seed": 1,
+    "sample_temperature": 0.8,
+    "longest_sample": 30,
+    "rng_draws": 31574
+  },
+  {
+    "url_sha256": "1bfffd347c8c2eabc9dcbf91e8b02d093621d3648c293126a50dab2707a99218",
+    "model": "mlp31_h32_lsq_fine_s1",
+    "kind": "mlp",
+    "config": {
+      "e": 6,
+      "h": 32,
+      "levels": 31,
+      "k": 3,
+      "lsq": true
+    },
+    "params": 2161,
+    "levels": 31,
+    "program_chars": 443,
+    "weight_digits": 3223,
+    "payload_bytes": 3669,
+    "url_chars": 3692,
+    "qr_version": 31,
+    "data_bits": 14496,
+    "slack_bits": 248,
+    "segments": [
+      "alnum:22",
+      "byte:447",
+      "numeric:3223"
+    ],
+    "val_bpc": 2.3082942212815456,
+    "tensors": [
+      {
+        "name": "emb",
+        "shape": [
+          39,
+          6
+        ],
+        "scale": 0.2041,
+        "levels": 31
+      },
+      {
+        "name": "w1",
+        "shape": [
+          32,
+          19
+        ],
+        "scale": 0.1273,
+        "levels": 31
+      },
+      {
+        "name": "b1",
+        "shape": [
+          32
+        ],
+        "scale": 0.1606,
+        "levels": 31
+      },
+      {
+        "name": "w2",
+        "shape": [
+          39,
+          32
+        ],
+        "scale": 0.09075,
+        "levels": 31
+      },
+      {
+        "name": "b2",
+        "shape": [
+          39
+        ],
+        "scale": 0.1402,
+        "levels": 31
+      }
+    ],
+    "zxing_exact": true,
+    "node_bpc": 2.3082942212815456,
+    "validation_chars": 2521,
+    "probability_comparisons": 98319,
+    "max_logprob_error": 1.0658141036401503e-14,
+    "novel_pct": 96.85,
+    "over24_pct": 3.65,
+    "samples": [
+      "glm-4.5-116-flash",
+      "llama-2.5-8b-chge",
+      "gutral-7b-instras-g",
+      "gem-5.1-mia-xt",
+      "gpt-5.1-flash",
+      "grok-coder",
+      "llama-1-fast",
+      "ninhrd-veeo-47b",
+      "deepseeanite-a3b",
+      "nlma-3.1"
+    ],
+    "sample_count": 2000,
+    "sample_seed": 1,
+    "sample_temperature": 0.8,
+    "longest_sample": 37,
+    "rng_draws": 32355
+  },
+  {
+    "url_sha256": "bee6ce3810889c552e3c75fb3bf545b9628560f08ea8f3cdeeec809a6f9503b0",
+    "model": "mlp31_h29_lsq_fine_s0",
+    "kind": "mlp",
+    "config": {
+      "e": 6,
+      "h": 29,
+      "levels": 31,
+      "k": 3,
+      "lsq": true
+    },
+    "params": 1984,
+    "levels": 31,
+    "program_chars": 444,
+    "weight_digits": 2959,
+    "payload_bytes": 3406,
+    "url_chars": 3429,
+    "qr_version": 30,
+    "data_bits": 13624,
+    "slack_bits": 256,
+    "segments": [
+      "alnum:22",
+      "byte:448",
+      "numeric:2959"
+    ],
+    "val_bpc": 2.3132517229241176,
+    "tensors": [
+      {
+        "name": "emb",
+        "shape": [
+          39,
+          6
+        ],
+        "scale": 0.2039,
+        "levels": 31
+      },
+      {
+        "name": "w1",
+        "shape": [
+          29,
+          19
+        ],
+        "scale": 0.1333,
+        "levels": 31
+      },
+      {
+        "name": "b1",
+        "shape": [
+          29
+        ],
+        "scale": 0.1645,
+        "levels": 31
+      },
+      {
+        "name": "w2",
+        "shape": [
+          39,
+          29
+        ],
+        "scale": 0.09294,
+        "levels": 31
+      },
+      {
+        "name": "b2",
+        "shape": [
+          39
+        ],
+        "scale": 0.1349,
+        "levels": 31
+      }
+    ],
+    "zxing_exact": true,
+    "node_bpc": 2.313251722924116,
+    "validation_chars": 2521,
+    "probability_comparisons": 98319,
+    "max_logprob_error": 1.0658141036401503e-14,
+    "novel_pct": 96.9,
+    "over24_pct": 5.15,
+    "samples": [
+      "glm-3.5-12b-instruct",
+      "claude-3.7",
+      "grok-v4pbo-code",
+      "llame-k2-1-2b-barn",
+      "ctainite-chat-6",
+      "claude-spar-1.5-fladast",
+      "glm-5.8-coder-1p5",
+      "fw",
+      "llama3.3-maxn",
+      "opeg-m3-1b-chat"
+    ],
+    "sample_count": 2000,
+    "sample_seed": 1,
+    "sample_temperature": 0.8,
+    "longest_sample": 33,
+    "rng_draws": 32965
+  },
+  {
+    "url_sha256": "d4dbd6a4aed6b624a5f45bbb563500d44c720f762bea56d21fc4515a4153248a",
+    "model": "mlp31_h28_lsq_s0",
+    "kind": "mlp",
+    "config": {
+      "e": 6,
+      "h": 28,
+      "levels": 31,
+      "k": 3,
+      "lsq": true
+    },
+    "params": 1925,
+    "levels": 31,
+    "program_chars": 444,
+    "weight_digits": 2871,
+    "payload_bytes": 3318,
+    "url_chars": 3341,
+    "qr_version": 30,
+    "data_bits": 13330,
+    "slack_bits": 550,
+    "segments": [
+      "alnum:22",
+      "byte:448",
+      "numeric:2871"
+    ],
+    "val_bpc": 2.319354689021596,
+    "tensors": [
+      {
+        "name": "emb",
+        "shape": [
+          39,
+          6
+        ],
+        "scale": 0.1668,
+        "levels": 31
+      },
+      {
+        "name": "w1",
+        "shape": [
+          28,
+          19
+        ],
+        "scale": 0.1228,
+        "levels": 31
+      },
+      {
+        "name": "b1",
+        "shape": [
+          28
+        ],
+        "scale": 0.1509,
+        "levels": 31
+      },
+      {
+        "name": "w2",
+        "shape": [
+          39,
+          28
+        ],
+        "scale": 0.08753,
+        "levels": 31
+      },
+      {
+        "name": "b2",
+        "shape": [
+          39
+        ],
+        "scale": 0.1334,
+        "levels": 31
+      }
+    ],
+    "zxing_exact": true,
+    "node_bpc": 2.319354689021597,
+    "validation_chars": 2521,
+    "probability_comparisons": 98319,
+    "max_logprob_error": 1.0658141036401503e-14,
+    "novel_pct": 96.35,
+    "over24_pct": 2.7,
+    "samples": [
+      "glm-4.6-1254b-itpus-5",
+      "claude-ourorch-v3.8-30b",
+      "gemma-v2.0-1-260",
+      "llalaude-mode-32b",
+      "llama3-fistruct-v1-h-",
+      "gpt-5-pro-v2-turbo",
+      "ro-ap3-8b-25b-instruct",
+      "data-13b-instruct",
+      "glm-4p5-code-der-v3-lat",
+      "claude-opul-340"
+    ],
+    "sample_count": 2000,
+    "sample_seed": 1,
+    "sample_temperature": 0.8,
+    "longest_sample": 32,
+    "rng_draws": 31384
+  },
+  {
+    "url_sha256": "99085adc5558fc582cef06853dc7c7eda00e5d6a5d17c92ae48acae4715b2488",
+    "model": "mlp31_h28_lsq_s1",
+    "kind": "mlp",
+    "config": {
+      "e": 6,
+      "h": 28,
+      "levels": 31,
+      "k": 3,
+      "lsq": true
+    },
+    "params": 1925,
+    "levels": 31,
+    "program_chars": 444,
+    "weight_digits": 2871,
+    "payload_bytes": 3318,
+    "url_chars": 3341,
+    "qr_version": 30,
+    "data_bits": 13330,
+    "slack_bits": 550,
+    "segments": [
+      "alnum:22",
+      "byte:448",
+      "numeric:2871"
+    ],
+    "val_bpc": 2.3305293072446185,
+    "tensors": [
+      {
+        "name": "emb",
+        "shape": [
+          39,
+          6
+        ],
+        "scale": 0.1595,
+        "levels": 31
+      },
+      {
+        "name": "w1",
+        "shape": [
+          28,
+          19
+        ],
+        "scale": 0.1078,
+        "levels": 31
+      },
+      {
+        "name": "b1",
+        "shape": [
+          28
+        ],
+        "scale": 0.1284,
+        "levels": 31
+      },
+      {
+        "name": "w2",
+        "shape": [
+          39,
+          28
+        ],
+        "scale": 0.09277,
+        "levels": 31
+      },
+      {
+        "name": "b2",
+        "shape": [
+          39
+        ],
+        "scale": 0.1127,
+        "levels": 31
+      }
+    ],
+    "zxing_exact": true,
+    "node_bpc": 2.3305293072446154,
+    "validation_chars": 2521,
+    "probability_comparisons": 98319,
+    "max_logprob_error": 1.4210854715202004e-14,
+    "novel_pct": 97.1,
+    "over24_pct": 4.5,
+    "samples": [
+      "gpt-3.5-128b-instruct",
+      "claude-otabt-instruini",
+      "deepsederk",
+      "gemini",
+      "mise",
+      "yos-4p5-chat-largect",
+      "grok-4-flash",
+      "aina-7b-instrurn",
+      "gpt-6-4-0-8b",
+      "cotoini-thos-2-8b"
+    ],
+    "sample_count": 2000,
+    "sample_seed": 1,
+    "sample_temperature": 0.8,
+    "longest_sample": 33,
+    "rng_draws": 32369
+  },
+  {
+    "url_sha256": "0278766489bb3bf750a785ecde026f2db652dcf90a41baef2052d14189cf0819",
+    "model": "mlp61_soft3",
+    "kind": "mlp",
+    "config": {
+      "e": 6,
+      "h": 24,
+      "levels": 61,
+      "k": 3
+    },
+    "params": 1689,
+    "levels": 61,
+    "program_chars": 445,
+    "weight_digits": 3016,
+    "payload_bytes": 3464,
+    "url_chars": 3487,
+    "qr_version": 30,
+    "data_bits": 13822,
+    "slack_bits": 58,
+    "segments": [
+      "alnum:22",
+      "byte:449",
+      "numeric:3016"
+    ],
+    "val_bpc": 2.3554634226511117,
+    "tensors": [
+      {
+        "name": "emb",
+        "shape": [
+          39,
+          6
+        ],
+        "scale": 0.1756,
+        "levels": 61
+      },
+      {
+        "name": "w1",
+        "shape": [
+          24,
+          19
+        ],
+        "scale": 0.1074,
+        "levels": 61
+      },
+      {
+        "name": "b1",
+        "shape": [
+          24
+        ],
+        "scale": 0.09442,
+        "levels": 61
+      },
+      {
+        "name": "w2",
+        "shape": [
+          39,
+          24
+        ],
+        "scale": 0.0945,
+        "levels": 61
+      },
+      {
+        "name": "b2",
+        "shape": [
+          39
+        ],
+        "scale": 0.09796,
+        "levels": 61
+      }
+    ],
+    "zxing_exact": true,
+    "node_bpc": 2.355463422651114,
+    "validation_chars": 2521,
+    "probability_comparisons": 98319,
+    "max_logprob_error": 1.4210854715202004e-14,
+    "novel_pct": 96.8,
+    "over24_pct": 3.35,
+    "samples": [
+      "glm-3.7-12b-instruct",
+      "databricks-grch-v32b-chaickith",
+      "rax",
+      "gemba-5.5-0",
+      "ypas-v3.1",
+      "qwen3-70b-instrucpl",
+      "gpt-0.5",
+      "gemma-3b-it-opus-4",
+      "gpt-5.3",
+      "motiseek-v4.1"
+    ],
+    "sample_count": 2000,
+    "sample_seed": 1,
+    "sample_temperature": 0.8,
+    "longest_sample": 33,
+    "rng_draws": 32034
+  },
+  {
+    "model": "published_mlp",
+    "kind": "mlp",
+    "params": 1689,
+    "levels": 61,
+    "program_chars": 450,
+    "weight_digits": 3016,
+    "url_chars": 3492,
+    "payload_bytes": 3469,
+    "qr_version": 30,
+    "data_bits": 13862,
+    "slack_bits": 18,
+    "segments": [
+      "alnum:22",
+      "byte:454",
+      "numeric:3016"
+    ],
+    "historical_bpc": 2.3555257321015066,
+    "node_bpc": 2.355463422651114,
+    "validation_chars": 2521,
+    "probability_comparisons": 98319,
+    "max_logprob_error": 1.4210854715202004e-14,
+    "novel_pct": 96.8,
+    "over24_pct": 3.35,
+    "samples": [
+      "glm-3.7-12b-instruct",
+      "databricks-grch-v32b-chaickith",
+      "rax",
+      "gemba-5.5-0",
+      "ypas-v3.1",
+      "qwen3-70b-instrucpl",
+      "gpt-0.5",
+      "gemma-3b-it-opus-4",
+      "gpt-5.3",
+      "motiseek-v4.1"
+    ],
+    "sample_count": 2000,
+    "sample_seed": 1,
+    "sample_temperature": 0.8,
+    "longest_sample": 33,
+    "rng_draws": 32034,
+    "val_bpc": 2.355463422651114
+  },
+  {
+    "url_sha256": "de3003e996ba2ac46fbfccc7ec3723425f99b0a435597a597122846676dc59b5",
+    "model": "mlp45_lsq_fine_s0",
+    "kind": "mlp",
+    "config": {
+      "e": 6,
+      "h": 24,
+      "levels": 45,
+      "k": 3,
+      "lsq": true
+    },
+    "params": 1689,
+    "levels": 45,
+    "program_chars": 444,
+    "weight_digits": 2793,
+    "payload_bytes": 3240,
+    "url_chars": 3263,
+    "qr_version": 30,
+    "data_bits": 13070,
+    "slack_bits": 810,
+    "segments": [
+      "alnum:22",
+      "byte:448",
+      "numeric:2793"
+    ],
+    "val_bpc": 2.359242108580414,
+    "tensors": [
+      {
+        "name": "emb",
+        "shape": [
+          39,
+          6
+        ],
+        "scale": 0.149,
+        "levels": 45
+      },
+      {
+        "name": "w1",
+        "shape": [
+          24,
+          19
+        ],
+        "scale": 0.1004,
+        "levels": 45
+      },
+      {
+        "name": "b1",
+        "shape": [
+          24
+        ],
+        "scale": 0.125,
+        "levels": 45
+      },
+      {
+        "name": "w2",
+        "shape": [
+          39,
+          24
+        ],
+        "scale": 0.07487,
+        "levels": 45
+      },
+      {
+        "name": "b2",
+        "shape": [
+          39
+        ],
+        "scale": 0.1153,
+        "levels": 45
+      }
+    ],
+    "zxing_exact": true,
+    "node_bpc": 2.3592421085804105,
+    "validation_chars": 2521,
+    "probability_comparisons": 98319,
+    "max_logprob_error": 1.0658141036401503e-14,
+    "novel_pct": 96.75,
+    "over24_pct": 5.6,
+    "samples": [
+      "glm-2.5-13b",
+      "llama-4-1-11b-instruct",
+      "kitrosv",
+      "gpt-5.6-193b",
+      "gem-ma-3.8",
+      "cugminstraf-mem-1.2-5-27b",
+      "glemarba-1-87b",
+      "gpt-5ab-spero",
+      "qwan3-8b-imax-lir-v202b",
+      "com-1p5-5-flash"
+    ],
+    "sample_count": 2000,
+    "sample_seed": 1,
+    "sample_temperature": 0.8,
+    "longest_sample": 32,
+    "rng_draws": 32965
+  },
+  {
+    "model": "mlp61_soft7",
+    "kind": "mlp",
+    "config": {
+      "e": 6,
+      "h": 24,
+      "levels": 61,
+      "k": 3
+    },
+    "params": 1689,
+    "levels": 61,
+    "program_chars": 445,
+    "weight_digits": 3016,
+    "payload_bytes": 3464,
+    "url_chars": 3487,
+    "qr_version": 30,
+    "data_bits": 13822,
+    "slack_bits": 58,
+    "segments": [
+      "alnum:22",
+      "byte:449",
+      "numeric:3016"
+    ],
+    "val_bpc": 2.360951183605606,
+    "tensors": [
+      {
+        "name": "emb",
+        "shape": [
+          39,
+          6
+        ],
+        "scale": 0.1812,
+        "levels": 61
+      },
+      {
+        "name": "w1",
+        "shape": [
+          24,
+          19
+        ],
+        "scale": 0.1081,
+        "levels": 61
+      },
+      {
+        "name": "b1",
+        "shape": [
+          24
+        ],
+        "scale": 0.09833,
+        "levels": 61
+      },
+      {
+        "name": "w2",
+        "shape": [
+          39,
+          24
+        ],
+        "scale": 0.09247,
+        "levels": 61
+      },
+      {
+        "name": "b2",
+        "shape": [
+          39
+        ],
+        "scale": 0.1091,
+        "levels": 61
+      }
+    ],
+    "zxing_exact": true,
+    "node_bpc": 2.3609511836056063,
+    "validation_chars": 2521,
+    "probability_comparisons": 98319,
+    "max_logprob_error": 1.4210854715202004e-14,
+    "novel_pct": 96.55,
+    "over24_pct": 4.1,
+    "samples": [
+      "glm-3.7-0-72b-it-lat-5",
+      "gemma-7b-it",
+      "llranitabricks-g",
+      "qwen3-5-mini-p-0qc2-grmin",
+      "qwen3-72b-instrucpl-lat",
+      "2-chat-opustrus-4-flase",
+      "lara-lathinkinw",
+      "nllama3-1b-instruct",
+      "kimax",
+      "qwen3-claudeep8-7b"
+    ],
+    "sample_count": 2000,
+    "sample_seed": 1,
+    "sample_temperature": 0.8,
+    "longest_sample": 35,
+    "rng_draws": 31996
+  },
+  {
+    "url_sha256": "617f42a20814c7ff4f2c254ad8da27b89037143da423a6874b5370bef314a7ff",
+    "model": "mlp45_h26_soft3_s0",
+    "kind": "mlp",
+    "config": {
+      "e": 6,
+      "h": 26,
+      "levels": 45,
+      "k": 3
+    },
+    "params": 1807,
+    "levels": 45,
+    "program_chars": 442,
+    "weight_digits": 2988,
+    "payload_bytes": 3433,
+    "url_chars": 3456,
+    "qr_version": 30,
+    "data_bits": 13704,
+    "slack_bits": 176,
+    "segments": [
+      "alnum:22",
+      "byte:446",
+      "numeric:2988"
+    ],
+    "val_bpc": 2.369229524617456,
+    "tensors": [
+      {
+        "name": "emb",
+        "shape": [
+          39,
+          6
+        ],
+        "scale": 0.2569,
+        "levels": 45
+      },
+      {
+        "name": "w1",
+        "shape": [
+          26,
+          19
+        ],
+        "scale": 0.1496,
+        "levels": 45
+      },
+      {
+        "name": "b1",
+        "shape": [
+          26
+        ],
+        "scale": 0.1399,
+        "levels": 45
+      },
+      {
+        "name": "w2",
+        "shape": [
+          39,
+          26
+        ],
+        "scale": 0.1203,
+        "levels": 45
+      },
+      {
+        "name": "b2",
+        "shape": [
+          39
+        ],
+        "scale": 0.148,
+        "levels": 45
+      }
+    ],
+    "zxing_exact": true,
+    "node_bpc": 2.3692295246174533,
+    "validation_chars": 2521,
+    "probability_comparisons": 98319,
+    "max_logprob_error": 1.0658141036401503e-14,
+    "novel_pct": 96.5,
+    "over24_pct": 2,
+    "samples": [
+      "glm-3.5-12b-instruct",
+      "clateranite",
+      "testralium-3.3",
+      "mos",
+      "rax",
+      "gemhan-3.8",
+      "cugmity-coder-4.1",
+      "mugpt-onne-4.1",
+      "qwan3-7-5-7b-sonstruct",
+      "p3-chat-l2-mini"
+    ],
+    "sample_count": 2000,
+    "sample_seed": 1,
+    "sample_temperature": 0.8,
+    "longest_sample": 31,
+    "rng_draws": 30380
+  },
+  {
+    "url_sha256": "5256f58ecaa9e1d3c1ef436a70283cd1f248d8770a0dd52f255554b0474d64de",
+    "model": "mlp45_soft7",
+    "kind": "mlp",
+    "config": {
+      "e": 6,
+      "h": 24,
+      "levels": 45,
+      "k": 3
+    },
+    "params": 1689,
+    "levels": 45,
+    "program_chars": 443,
+    "weight_digits": 2793,
+    "payload_bytes": 3239,
+    "url_chars": 3262,
+    "qr_version": 30,
+    "data_bits": 13062,
+    "slack_bits": 818,
+    "segments": [
+      "alnum:22",
+      "byte:447",
+      "numeric:2793"
+    ],
+    "val_bpc": 2.384423290771137,
+    "tensors": [
+      {
+        "name": "emb",
+        "shape": [
+          39,
+          6
+        ],
+        "scale": 0.2416,
+        "levels": 45
+      },
+      {
+        "name": "w1",
+        "shape": [
+          24,
+          19
+        ],
+        "scale": 0.1487,
+        "levels": 45
+      },
+      {
+        "name": "b1",
+        "shape": [
+          24
+        ],
+        "scale": 0.1286,
+        "levels": 45
+      },
+      {
+        "name": "w2",
+        "shape": [
+          39,
+          24
+        ],
+        "scale": 0.1277,
+        "levels": 45
+      },
+      {
+        "name": "b2",
+        "shape": [
+          39
+        ],
+        "scale": 0.1385,
+        "levels": 45
+      }
+    ],
+    "zxing_exact": true,
+    "node_bpc": 2.384423290771144,
+    "validation_chars": 2521,
+    "probability_comparisons": 98319,
+    "max_logprob_error": 1.0658141036401503e-14,
+    "novel_pct": 96.6,
+    "over24_pct": 3.8,
+    "samples": [
+      "glm-2.5-13b-instruct",
+      "chateree-s2-kimixnstruct",
+      "gemma-v2p-laracr-vle",
+      "cude-ous-4-ning-3-7b",
+      "mistral",
+      "mistra-4.1",
+      "fw-gpterculminimo",
+      "deapero",
+      "motron-veepseege",
+      "code-llama-4.2"
+    ],
+    "sample_count": 2000,
+    "sample_seed": 1,
+    "sample_temperature": 0.8,
+    "longest_sample": 33,
+    "rng_draws": 31884
+  },
+  {
+    "url_sha256": "f5a670267b56d106a2ed35869135a5c2e996ebb55f10fa67b960d9ecf84b62b3",
+    "model": "mlp45_soft3",
+    "kind": "mlp",
+    "config": {
+      "e": 6,
+      "h": 24,
+      "levels": 45,
+      "k": 3
+    },
+    "params": 1689,
+    "levels": 45,
+    "program_chars": 443,
+    "weight_digits": 2793,
+    "payload_bytes": 3239,
+    "url_chars": 3262,
+    "qr_version": 30,
+    "data_bits": 13062,
+    "slack_bits": 818,
+    "segments": [
+      "alnum:22",
+      "byte:447",
+      "numeric:2793"
+    ],
+    "val_bpc": 2.3852838816929887,
+    "tensors": [
+      {
+        "name": "emb",
+        "shape": [
+          39,
+          6
+        ],
+        "scale": 0.2407,
+        "levels": 45
+      },
+      {
+        "name": "w1",
+        "shape": [
+          24,
+          19
+        ],
+        "scale": 0.1485,
+        "levels": 45
+      },
+      {
+        "name": "b1",
+        "shape": [
+          24
+        ],
+        "scale": 0.129,
+        "levels": 45
+      },
+      {
+        "name": "w2",
+        "shape": [
+          39,
+          24
+        ],
+        "scale": 0.1278,
+        "levels": 45
+      },
+      {
+        "name": "b2",
+        "shape": [
+          39
+        ],
+        "scale": 0.1375,
+        "levels": 45
+      }
+    ],
+    "zxing_exact": true,
+    "node_bpc": 2.3852838816929873,
+    "validation_chars": 2521,
+    "probability_comparisons": 98319,
+    "max_logprob_error": 1.0658141036401503e-14,
+    "novel_pct": 97.45,
+    "over24_pct": 4.1,
+    "samples": [
+      "gemma-4-0325b-ale-r2",
+      "databhe-7b",
+      "grok-v4.it",
+      "gpt-5.6-17b-14",
+      "geminimo",
+      "cur-mite-4-pret-1-fus-4kst",
+      "gemma-lafama-2-8b-it",
+      "grok-4-prae-1.2",
+      "gemma-7b-onstruct-2",
+      "sma3-flangrok-1.1"
+    ],
+    "sample_count": 2000,
+    "sample_seed": 1,
+    "sample_temperature": 0.8,
+    "longest_sample": 33,
+    "rng_draws": 32057
+  },
+  {
+    "url_sha256": "47ec66a76948ac6b2408a6be9b265f31672ec3260698441f0779408d04e1a898",
+    "model": "mlp31_h28_lsq_s2",
+    "kind": "mlp",
+    "config": {
+      "e": 6,
+      "h": 28,
+      "levels": 31,
+      "k": 3,
+      "lsq": true
+    },
+    "params": 1925,
+    "levels": 31,
+    "program_chars": 443,
+    "weight_digits": 2872,
+    "payload_bytes": 3318,
+    "url_chars": 3341,
+    "qr_version": 30,
+    "data_bits": 13326,
+    "slack_bits": 554,
+    "segments": [
+      "alnum:22",
+      "byte:447",
+      "numeric:2872"
+    ],
+    "val_bpc": 2.3856937326955867,
+    "tensors": [
+      {
+        "name": "emb",
+        "shape": [
+          39,
+          6
+        ],
+        "scale": 0.1718,
+        "levels": 31
+      },
+      {
+        "name": "w1",
+        "shape": [
+          28,
+          19
+        ],
+        "scale": 0.1072,
+        "levels": 31
+      },
+      {
+        "name": "b1",
+        "shape": [
+          28
+        ],
+        "scale": 0.1474,
+        "levels": 31
+      },
+      {
+        "name": "w2",
+        "shape": [
+          39,
+          28
+        ],
+        "scale": 0.08834,
+        "levels": 31
+      },
+      {
+        "name": "b2",
+        "shape": [
+          39
+        ],
+        "scale": 0.1088,
+        "levels": 31
+      }
+    ],
+    "zxing_exact": true,
+    "node_bpc": 2.3856937326955907,
+    "validation_chars": 2521,
+    "probability_comparisons": 98319,
+    "max_logprob_error": 1.0658141036401503e-14,
+    "novel_pct": 97.1,
+    "over24_pct": 4.05,
+    "samples": [
+      "glm-3-flash",
+      "llama-7b",
+      "databricks-gute-yuser",
+      "gpt-5.5-1b",
+      "o-3-3-flash-1-uhsonr",
+      "glm-5.3-13b-instruct",
+      "mistra-3.1-5-minite-vet",
+      "llama-4-code",
+      "mistral-7b-inn-5-1b",
+      "gimi-k2-7b-i.sarbe-chat"
+    ],
+    "sample_count": 2000,
+    "sample_seed": 1,
+    "sample_temperature": 0.8,
+    "longest_sample": 32,
+    "rng_draws": 31489
+  },
+  {
+    "url_sha256": "0f1eede6543c0fbb351b0028945ed21fee42fce83fa9bb83c28429a71c760479",
+    "model": "mlp45_lsq_s0",
+    "kind": "mlp",
+    "config": {
+      "e": 6,
+      "h": 24,
+      "levels": 45,
+      "k": 3,
+      "lsq": true
+    },
+    "params": 1689,
+    "levels": 45,
+    "program_chars": 445,
+    "weight_digits": 2793,
+    "payload_bytes": 3241,
+    "url_chars": 3264,
+    "qr_version": 30,
+    "data_bits": 13078,
+    "slack_bits": 802,
+    "segments": [
+      "alnum:22",
+      "byte:449",
+      "numeric:2793"
+    ],
+    "val_bpc": 2.4076365067514165,
+    "tensors": [
+      {
+        "name": "emb",
+        "shape": [
+          39,
+          6
+        ],
+        "scale": 0.1235,
+        "levels": 45
+      },
+      {
+        "name": "w1",
+        "shape": [
+          24,
+          19
+        ],
+        "scale": 0.08231,
+        "levels": 45
+      },
+      {
+        "name": "b1",
+        "shape": [
+          24
+        ],
+        "scale": 0.1009,
+        "levels": 45
+      },
+      {
+        "name": "w2",
+        "shape": [
+          39,
+          24
+        ],
+        "scale": 0.07654,
+        "levels": 45
+      },
+      {
+        "name": "b2",
+        "shape": [
+          39
+        ],
+        "scale": 0.08686,
+        "levels": 45
+      }
+    ],
+    "zxing_exact": true,
+    "node_bpc": 2.4076365067514223,
+    "validation_chars": 2521,
+    "probability_comparisons": 98319,
+    "max_logprob_error": 8.881784197001252e-15,
+    "novel_pct": 98.6,
+    "over24_pct": 4.3,
+    "samples": [
+      "glm-4-meai-gpt-thini",
+      "claude-3.7-cybhat-low",
+      "gpt-5.6-1b",
+      "qwen2-flashe",
+      "cus-4-turb-m5-8b",
+      "het-max-m3-13b",
+      "llada-1-3-minist",
+      "vipto-v4-22-70b",
+      "comma-3.7-flash",
+      "qwen-3-7b-glm-5-4"
+    ],
+    "sample_count": 2000,
+    "sample_seed": 1,
+    "sample_temperature": 0.8,
+    "longest_sample": 33,
+    "rng_draws": 33739
+  },
+  {
+    "model": "mlp31_h28_s0",
+    "kind": "mlp",
+    "config": {
+      "e": 6,
+      "h": 28,
+      "levels": 31,
+      "k": 3
+    },
+    "params": 1925,
+    "levels": 31,
+    "program_chars": 443,
+    "weight_digits": 2871,
+    "payload_bytes": 3317,
+    "url_chars": 3340,
+    "qr_version": 30,
+    "data_bits": 13322,
+    "slack_bits": 558,
+    "segments": [
+      "alnum:22",
+      "byte:447",
+      "numeric:2871"
+    ],
+    "val_bpc": 2.408967442564867,
+    "tensors": [
+      {
+        "name": "emb",
+        "shape": [
+          39,
+          6
+        ],
+        "scale": 0.3269,
+        "levels": 31
+      },
+      {
+        "name": "w1",
+        "shape": [
+          28,
+          19
+        ],
+        "scale": 0.2016,
+        "levels": 31
+      },
+      {
+        "name": "b1",
+        "shape": [
+          28
+        ],
+        "scale": 0.1772,
+        "levels": 31
+      },
+      {
+        "name": "w2",
+        "shape": [
+          39,
+          28
+        ],
+        "scale": 0.1484,
+        "levels": 31
+      },
+      {
+        "name": "b2",
+        "shape": [
+          39
+        ],
+        "scale": 0.2081,
+        "levels": 31
+      }
+    ],
+    "zxing_exact": true,
+    "node_bpc": 2.4089674425648657,
+    "validation_chars": 2521,
+    "probability_comparisons": 98319,
+    "max_logprob_error": 1.2434497875801753e-14,
+    "novel_pct": 97.5,
+    "over24_pct": 7.55,
+    "samples": [
+      "glm-4.6-13b",
+      "llama-4.1",
+      "claude-opint-5.staus",
+      "gpt-4.7-14b-a3",
+      "gesimo.s-2p5-72b-instruct",
+      "gpt-5.6-flakistrucen",
+      "deepseeks-gut-7b",
+      "ro",
+      "elaseek",
+      "momiornustar2-7b"
+    ],
+    "sample_count": 2000,
+    "sample_seed": 1,
+    "sample_temperature": 0.8,
+    "longest_sample": 37,
+    "rng_draws": 34516
+  },
+  {
+    "url_sha256": "0d9cd816d6f4d63460d2ddf436f8fc60d4215d6cfc7f39721082b37bfc28f9fd",
+    "model": "mlp31_h28_soft3_max_s0",
+    "kind": "mlp",
+    "config": {
+      "e": 6,
+      "h": 28,
+      "levels": 31,
+      "k": 3
+    },
+    "params": 1925,
+    "levels": 31,
+    "program_chars": 443,
+    "weight_digits": 2871,
+    "payload_bytes": 3317,
+    "url_chars": 3340,
+    "qr_version": 30,
+    "data_bits": 13322,
+    "slack_bits": 558,
+    "segments": [
+      "alnum:22",
+      "byte:447",
+      "numeric:2871"
+    ],
+    "val_bpc": 2.4228085517859954,
+    "tensors": [
+      {
+        "name": "emb",
+        "shape": [
+          39,
+          6
+        ],
+        "scale": 0.3017,
+        "levels": 31
+      },
+      {
+        "name": "w1",
+        "shape": [
+          28,
+          19
+        ],
+        "scale": 0.2589,
+        "levels": 31
+      },
+      {
+        "name": "b1",
+        "shape": [
+          28
+        ],
+        "scale": 0.2799,
+        "levels": 31
+      },
+      {
+        "name": "w2",
+        "shape": [
+          39,
+          28
+        ],
+        "scale": 0.1483,
+        "levels": 31
+      },
+      {
+        "name": "b2",
+        "shape": [
+          39
+        ],
+        "scale": 0.2013,
+        "levels": 31
+      }
+    ],
+    "zxing_exact": true,
+    "node_bpc": 2.422808551785996,
+    "validation_chars": 2521,
+    "probability_comparisons": 98319,
+    "max_logprob_error": 1.0658141036401503e-14,
+    "novel_pct": 98.2,
+    "over24_pct": 11.55,
+    "samples": [
+      "glm-4.5-13b-instruct",
+      "dat-ul-8b-chnus-wpstruct",
+      "hernaas-latba",
+      "peepseedti-aburo.",
+      "qwen3-72b-instruct",
+      "minie-3-2-2-8b-it",
+      "grok-4-pr-5-12b-imink-pr-8b-cl",
+      "cos-1wan3-flanh-ons",
+      "merast-4.2-flatest",
+      "mab"
+    ],
+    "sample_count": 2000,
+    "sample_seed": 1,
+    "sample_temperature": 0.8,
+    "longest_sample": 37,
+    "rng_draws": 35484
+  },
+  {
+    "url_sha256": "56781e9cadd710b310aa14c2ed8d63512b2c4c6688947b85ff0cba9739ae76e0",
+    "model": "mlp31_h24_soft3_s0",
+    "kind": "mlp",
+    "config": {
+      "e": 6,
+      "h": 24,
+      "levels": 31,
+      "k": 3
+    },
+    "params": 1689,
+    "levels": 31,
+    "program_chars": 444,
+    "weight_digits": 2520,
+    "payload_bytes": 2967,
+    "url_chars": 2990,
+    "qr_version": 28,
+    "data_bits": 12160,
+    "slack_bits": 88,
+    "segments": [
+      "alnum:22",
+      "byte:448",
+      "numeric:2520"
+    ],
+    "val_bpc": 2.4602620017589167,
+    "tensors": [
+      {
+        "name": "emb",
+        "shape": [
+          39,
+          6
+        ],
+        "scale": 0.3513,
+        "levels": 31
+      },
+      {
+        "name": "w1",
+        "shape": [
+          24,
+          19
+        ],
+        "scale": 0.2148,
+        "levels": 31
+      },
+      {
+        "name": "b1",
+        "shape": [
+          24
+        ],
+        "scale": 0.1888,
+        "levels": 31
+      },
+      {
+        "name": "w2",
+        "shape": [
+          39,
+          24
+        ],
+        "scale": 0.189,
+        "levels": 31
+      },
+      {
+        "name": "b2",
+        "shape": [
+          39
+        ],
+        "scale": 0.1959,
+        "levels": 31
+      }
+    ],
+    "zxing_exact": true,
+    "node_bpc": 2.4602620017589207,
+    "validation_chars": 2521,
+    "probability_comparisons": 98319,
+    "max_logprob_error": 1.4210854715202004e-14,
+    "novel_pct": 97.75,
+    "over24_pct": 6.1,
+    "samples": [
+      "glm-2.5-12b",
+      "montocodeel-a3b",
+      "gpt-54-32p4-vx-3-1-20b",
+      "code-larast",
+      "mot-4p5-como-4",
+      "qwen3-7b-instruct",
+      "motron",
+      "gpt-4-flastrutemin",
+      "qwen3-8b-imist",
+      "qwes-m-m-8b-a1b"
+    ],
+    "sample_count": 2000,
+    "sample_seed": 1,
+    "sample_temperature": 0.8,
+    "longest_sample": 35,
+    "rng_draws": 33353
+  },
+  {
+    "url_sha256": "56781e9cadd710b310aa14c2ed8d63512b2c4c6688947b85ff0cba9739ae76e0",
+    "model": "mlp31_init",
+    "kind": "mlp",
+    "config": {
+      "e": 6,
+      "h": 24,
+      "levels": 31,
+      "k": 3
+    },
+    "params": 1689,
+    "levels": 31,
+    "program_chars": 444,
+    "weight_digits": 2520,
+    "payload_bytes": 2967,
+    "url_chars": 2990,
+    "qr_version": 28,
+    "data_bits": 12160,
+    "slack_bits": 88,
+    "segments": [
+      "alnum:22",
+      "byte:448",
+      "numeric:2520"
+    ],
+    "val_bpc": 2.4602620017589167,
+    "tensors": [
+      {
+        "name": "emb",
+        "shape": [
+          39,
+          6
+        ],
+        "scale": 0.3513,
+        "levels": 31
+      },
+      {
+        "name": "w1",
+        "shape": [
+          24,
+          19
+        ],
+        "scale": 0.2148,
+        "levels": 31
+      },
+      {
+        "name": "b1",
+        "shape": [
+          24
+        ],
+        "scale": 0.1888,
+        "levels": 31
+      },
+      {
+        "name": "w2",
+        "shape": [
+          39,
+          24
+        ],
+        "scale": 0.189,
+        "levels": 31
+      },
+      {
+        "name": "b2",
+        "shape": [
+          39
+        ],
+        "scale": 0.1959,
+        "levels": 31
+      }
+    ],
+    "zxing_exact": true,
+    "node_bpc": 2.4602620017589207,
+    "validation_chars": 2521,
+    "probability_comparisons": 98319,
+    "max_logprob_error": 1.4210854715202004e-14,
+    "novel_pct": 97.75,
+    "over24_pct": 6.1,
+    "samples": [
+      "glm-2.5-12b",
+      "montocodeel-a3b",
+      "gpt-54-32p4-vx-3-1-20b",
+      "code-larast",
+      "mot-4p5-como-4",
+      "qwen3-7b-instruct",
+      "motron",
+      "gpt-4-flastrutemin",
+      "qwen3-8b-imist",
+      "qwes-m-m-8b-a1b"
+    ],
+    "sample_count": 2000,
+    "sample_seed": 1,
+    "sample_temperature": 0.8,
+    "longest_sample": 35,
+    "rng_draws": 33353
+  },
+  {
+    "url_sha256": "e9551b9e0a9537d61cb60b3c5db072f50149790833ce2933d3b2ea475fee089b",
+    "model": "tap21_lsq_fine_s1",
+    "kind": "tap",
+    "config": {
+      "e": 6,
+      "h": 28,
+      "levels": 21,
+      "k": 3,
+      "q": 1,
+      "slope": 6.0,
+      "skip": 0.0,
+      "lsq": true
+    },
+    "params": 1949,
+    "levels": 21,
+    "program_chars": 733,
+    "weight_digits": 2578,
+    "payload_bytes": 3314,
+    "url_chars": 3337,
+    "qr_version": 31,
+    "data_bits": 14666,
+    "slack_bits": 78,
+    "segments": [
+      "alnum:22",
+      "byte:737",
+      "numeric:2578"
+    ],
+    "val_bpc": 2.3522240488882615,
+    "tensors": [
+      {
+        "name": "emb",
+        "shape": [
+          39,
+          6
+        ],
+        "scale": 0.245,
+        "levels": 21
+      },
+      {
+        "name": "w1",
+        "shape": [
+          28,
+          19
+        ],
+        "scale": 0.1801,
+        "levels": 21
+      },
+      {
+        "name": "b1",
+        "shape": [
+          28
+        ],
+        "scale": 0.2299,
+        "levels": 21
+      },
+      {
+        "name": "w2",
+        "shape": [
+          39,
+          28
+        ],
+        "scale": 0.1266,
+        "levels": 21
+      },
+      {
+        "name": "b2",
+        "shape": [
+          39
+        ],
+        "scale": 0.1975,
+        "levels": 21
+      },
+      {
+        "name": "qk",
+        "shape": [
+          4,
+          6
+        ],
+        "scale": 0.003437,
+        "levels": 21
+      }
+    ],
+    "zxing_exact": true,
+    "node_bpc": 2.35222404888826,
+    "validation_chars": 2521,
+    "probability_comparisons": 98319,
+    "max_logprob_error": 1.0658141036401503e-14,
+    "novel_pct": 96.4,
+    "over24_pct": 3.9,
+    "samples": [
+      "glm-4.7-2307b-chat",
+      "jai-glm-4.7-aistrunmetuct",
+      "deepse-sonar",
+      "geminimo",
+      "cys-cono-fat-med",
+      "gpt-onus-4-13b-it",
+      "6eb",
+      "glm-5.3b-axo-4b",
+      "ro-3-025b-amustruct",
+      "nita-llamba-3-flash"
+    ],
+    "sample_count": 2000,
+    "sample_seed": 1,
+    "sample_temperature": 0.8,
+    "longest_sample": 34,
+    "rng_draws": 32625
+  },
+  {
+    "url_sha256": "d6c897848f2eb49b33cf1ba22739cb87f4382029cfb720cfa38b4e63e628d94f",
+    "model": "tap21_lsq_fine_s2",
+    "kind": "tap",
+    "config": {
+      "e": 6,
+      "h": 28,
+      "levels": 21,
+      "k": 3,
+      "q": 1,
+      "slope": 6.0,
+      "skip": 0.0,
+      "lsq": true
+    },
+    "params": 1949,
+    "levels": 21,
+    "program_chars": 734,
+    "weight_digits": 2578,
+    "payload_bytes": 3315,
+    "url_chars": 3338,
+    "qr_version": 31,
+    "data_bits": 14674,
+    "slack_bits": 70,
+    "segments": [
+      "alnum:22",
+      "byte:738",
+      "numeric:2578"
+    ],
+    "val_bpc": 2.3535146584180717,
+    "tensors": [
+      {
+        "name": "emb",
+        "shape": [
+          39,
+          6
+        ],
+        "scale": 0.2401,
+        "levels": 21
+      },
+      {
+        "name": "w1",
+        "shape": [
+          28,
+          19
+        ],
+        "scale": 0.1787,
+        "levels": 21
+      },
+      {
+        "name": "b1",
+        "shape": [
+          28
+        ],
+        "scale": 0.2267,
+        "levels": 21
+      },
+      {
+        "name": "w2",
+        "shape": [
+          39,
+          28
+        ],
+        "scale": 0.1244,
+        "levels": 21
+      },
+      {
+        "name": "b2",
+        "shape": [
+          39
+        ],
+        "scale": 0.1952,
+        "levels": 21
+      },
+      {
+        "name": "qk",
+        "shape": [
+          4,
+          6
+        ],
+        "scale": 0.008398,
+        "levels": 21
+      }
+    ],
+    "zxing_exact": true,
+    "node_bpc": 2.353514658418069,
+    "validation_chars": 2521,
+    "probability_comparisons": 98319,
+    "max_logprob_error": 1.0658141036401503e-14,
+    "novel_pct": 97,
+    "over24_pct": 3.15,
+    "samples": [
+      "glm-4.7-1265-situ",
+      "mini-3-lash-v1-th-fustpun",
+      "maranit-ult",
+      "gemanei.istruct",
+      "mus-4-nro-latest",
+      "grok-4-ash",
+      "qwan3-5-asonstrune-chat",
+      "aba",
+      "mini-4b-instruct",
+      "data-14b"
+    ],
+    "sample_count": 2000,
+    "sample_seed": 1,
+    "sample_temperature": 0.8,
+    "longest_sample": 32,
+    "rng_draws": 31411
+  },
+  {
+    "url_sha256": "531ec85f770a9114150e3ce412175c750cbba1d89c3e9852de4e375a265d7080",
+    "model": "tap21_lsq_fine_s0",
+    "kind": "tap",
+    "config": {
+      "e": 6,
+      "h": 28,
+      "levels": 21,
+      "k": 3,
+      "q": 1,
+      "slope": 6.0,
+      "skip": 0.0,
+      "lsq": true
+    },
+    "params": 1949,
+    "levels": 21,
+    "program_chars": 733,
+    "weight_digits": 2578,
+    "payload_bytes": 3314,
+    "url_chars": 3337,
+    "qr_version": 31,
+    "data_bits": 14666,
+    "slack_bits": 78,
+    "segments": [
+      "alnum:22",
+      "byte:737",
+      "numeric:2578"
+    ],
+    "val_bpc": 2.3547231721900266,
+    "tensors": [
+      {
+        "name": "emb",
+        "shape": [
+          39,
+          6
+        ],
+        "scale": 0.2398,
+        "levels": 21
+      },
+      {
+        "name": "w1",
+        "shape": [
+          28,
+          19
+        ],
+        "scale": 0.1776,
+        "levels": 21
+      },
+      {
+        "name": "b1",
+        "shape": [
+          28
+        ],
+        "scale": 0.2262,
+        "levels": 21
+      },
+      {
+        "name": "w2",
+        "shape": [
+          39,
+          28
+        ],
+        "scale": 0.1228,
+        "levels": 21
+      },
+      {
+        "name": "b2",
+        "shape": [
+          39
+        ],
+        "scale": 0.1922,
+        "levels": 21
+      },
+      {
+        "name": "qk",
+        "shape": [
+          4,
+          6
+        ],
+        "scale": 0.02375,
+        "levels": 21
+      }
+    ],
+    "zxing_exact": true,
+    "node_bpc": 2.3547231721900252,
+    "validation_chars": 2521,
+    "probability_comparisons": 98319,
+    "max_logprob_error": 1.0658141036401503e-14,
+    "novel_pct": 98.5,
+    "over24_pct": 5.6,
+    "samples": [
+      "gpt-3-flash",
+      "granite-2-104b-instrun-3-v3-rt",
+      "gpt-5.5-17b-72b",
+      "deem-ct0-vl-7b-instruct",
+      "claude-ouro-1.5-fla",
+      "gpt-5-pro-v2-turbo",
+      "qwen3-71b-8b-instruct",
+      "gemma-2p2-6-opseen-3-04",
+      "qwen3-8b-instruct-2-2b",
+      "llama-3-305"
+    ],
+    "sample_count": 2000,
+    "sample_seed": 1,
+    "sample_temperature": 0.8,
+    "longest_sample": 37,
+    "rng_draws": 34120
+  },
+  {
+    "url_sha256": "31af24578b56fe9f83442b2c0db2b1007e8b2aaf6b99b165b097d1052db9e0b2",
+    "model": "tap21_lsq_qonly_s0",
+    "kind": "tap",
+    "config": {
+      "e": 6,
+      "h": 28,
+      "levels": 21,
+      "k": 3,
+      "q": 1,
+      "slope": 6.0,
+      "skip": 0.0,
+      "lsq": true
+    },
+    "params": 1949,
+    "levels": 21,
+    "program_chars": 730,
+    "weight_digits": 2578,
+    "payload_bytes": 3311,
+    "url_chars": 3334,
+    "qr_version": 31,
+    "data_bits": 14642,
+    "slack_bits": 102,
+    "segments": [
+      "alnum:22",
+      "byte:734",
+      "numeric:2578"
+    ],
+    "val_bpc": 2.381689547502941,
+    "tensors": [
+      {
+        "name": "emb",
+        "shape": [
+          39,
+          6
+        ],
+        "scale": 0.2501,
+        "levels": 21
+      },
+      {
+        "name": "w1",
+        "shape": [
+          28,
+          19
+        ],
+        "scale": 0.1843,
+        "levels": 21
+      },
+      {
+        "name": "b1",
+        "shape": [
+          28
+        ],
+        "scale": 0.2264,
+        "levels": 21
+      },
+      {
+        "name": "w2",
+        "shape": [
+          39,
+          28
+        ],
+        "scale": 0.1313,
+        "levels": 21
+      },
+      {
+        "name": "b2",
+        "shape": [
+          39
+        ],
+        "scale": 0.2,
+        "levels": 21
+      },
+      {
+        "name": "qk",
+        "shape": [
+          4,
+          6
+        ],
+        "scale": 0.02537,
+        "levels": 21
+      }
+    ],
+    "zxing_exact": true,
+    "node_bpc": 2.381689547502941,
+    "validation_chars": 2521,
+    "probability_comparisons": 98319,
+    "max_logprob_error": 1.0658141036401503e-14,
+    "novel_pct": 97.05,
+    "over24_pct": 5.7,
+    "samples": [
+      "gpt-3-llama-42bhi-7-clarch",
+      "glm-4.sneryvhlr-7b",
+      "glm-4-tlr",
+      "gemini-4.8",
+      "cysn-rvas-20b-instruct",
+      "qwen3",
+      "minist-llama-clary-1b",
+      "mistraaki",
+      "llama-v3p6-fp8-lat",
+      "llame-7-llama-7b"
+    ],
+    "sample_count": 2000,
+    "sample_seed": 1,
+    "sample_temperature": 0.8,
+    "longest_sample": 32,
+    "rng_draws": 33226
+  },
+  {
+    "url_sha256": "56954776c28aaa54244beef2ef7ae1311b4cf3f78640831fd167ca0df9cd1922",
+    "model": "tap21_h28_lsq_transfer",
+    "kind": "tap",
+    "config": {
+      "e": 6,
+      "h": 28,
+      "k": 3,
+      "q": 1,
+      "slope": 6.0,
+      "skip": 0.0,
+      "levels": 21,
+      "lsq": true
+    },
+    "params": 1949,
+    "levels": 21,
+    "program_chars": 731,
+    "weight_digits": 2578,
+    "payload_bytes": 3312,
+    "url_chars": 3335,
+    "qr_version": 31,
+    "data_bits": 14650,
+    "slack_bits": 94,
+    "segments": [
+      "alnum:22",
+      "byte:735",
+      "numeric:2578"
+    ],
+    "val_bpc": 2.3828417135816404,
+    "tensors": [
+      {
+        "name": "emb",
+        "shape": [
+          39,
+          6
+        ],
+        "scale": 0.2501,
+        "levels": 21
+      },
+      {
+        "name": "w1",
+        "shape": [
+          28,
+          19
+        ],
+        "scale": 0.1843,
+        "levels": 21
+      },
+      {
+        "name": "b1",
+        "shape": [
+          28
+        ],
+        "scale": 0.2264,
+        "levels": 21
+      },
+      {
+        "name": "w2",
+        "shape": [
+          39,
+          28
+        ],
+        "scale": 0.1313,
+        "levels": 21
+      },
+      {
+        "name": "b2",
+        "shape": [
+          39
+        ],
+        "scale": 0.2,
+        "levels": 21
+      },
+      {
+        "name": "qk",
+        "shape": [
+          4,
+          6
+        ],
+        "scale": 0.001739,
+        "levels": 21
+      }
+    ],
+    "zxing_exact": true,
+    "node_bpc": 2.3828417135816364,
+    "validation_chars": 2521,
+    "probability_comparisons": 98319,
+    "max_logprob_error": 1.0658141036401503e-14,
+    "novel_pct": 97.1,
+    "over24_pct": 5.1,
+    "samples": [
+      "gpt-3-llama-42bhi-chat",
+      "gistral-2-ton-xonstruct",
+      "gpt-27b-aaak-v2-cor",
+      "cysknistract-med",
+      "gpt-onstral",
+      "minist-llama-clary-1b",
+      "mistraaki",
+      "llama-v3p6-fp8-lat",
+      "llame-7-llama-7b",
+      "gemh-mini-fini-pyt"
+    ],
+    "sample_count": 2000,
+    "sample_seed": 1,
+    "sample_temperature": 0.8,
+    "longest_sample": 33,
+    "rng_draws": 32848
+  },
+  {
+    "url_sha256": "d17ac9ce9dffb3c8300ef9894e16fcf93b5eee414fcdf0f1a98b05e775bda9ae",
+    "model": "tap45_s6_s0",
+    "kind": "tap",
+    "config": {
+      "e": 6,
+      "h": 24,
+      "levels": 45,
+      "k": 3,
+      "q": 1,
+      "slope": 6.0,
+      "skip": 0.1
+    },
+    "params": 1713,
+    "levels": 45,
+    "program_chars": 745,
+    "weight_digits": 2833,
+    "payload_bytes": 3581,
+    "url_chars": 3604,
+    "qr_version": 32,
+    "data_bits": 15612,
+    "slack_bits": 28,
+    "segments": [
+      "alnum:22",
+      "byte:749",
+      "numeric:2833"
+    ],
+    "val_bpc": 2.3879489267874665,
+    "tensors": [
+      {
+        "name": "emb",
+        "shape": [
+          39,
+          6
+        ],
+        "scale": 0.2543,
+        "levels": 45
+      },
+      {
+        "name": "w1",
+        "shape": [
+          24,
+          19
+        ],
+        "scale": 0.146,
+        "levels": 45
+      },
+      {
+        "name": "b1",
+        "shape": [
+          24
+        ],
+        "scale": 0.1427,
+        "levels": 45
+      },
+      {
+        "name": "w2",
+        "shape": [
+          39,
+          24
+        ],
+        "scale": 0.1302,
+        "levels": 45
+      },
+      {
+        "name": "b2",
+        "shape": [
+          39
+        ],
+        "scale": 0.1339,
+        "levels": 45
+      },
+      {
+        "name": "qk",
+        "shape": [
+          4,
+          6
+        ],
+        "scale": 0.02711,
+        "levels": 45
+      }
+    ],
+    "zxing_exact": true,
+    "node_bpc": 2.3879489267874665,
+    "validation_chars": 2521,
+    "probability_comparisons": 98319,
+    "max_logprob_error": 1.4210854715202004e-14,
+    "novel_pct": 97.15,
+    "over24_pct": 4.35,
+    "samples": [
+      "deepmere-s2.6-8b-instruct",
+      "llame-lpp7-vl-star-largk-1us-",
+      "gem-5.2-miaeym-5p7-flash",
+      "llama3-haulera3",
+      "nimo",
+      "2-v2-20b-instruct",
+      "llama-4-8b-instruct",
+      "seek-cipo-17b",
+      "fw-glm-5.3-122b",
+      "llama-3-flmaes-5-1"
+    ],
+    "sample_count": 2000,
+    "sample_seed": 1,
+    "sample_temperature": 0.8,
+    "longest_sample": 34,
+    "rng_draws": 31268
+  },
+  {
+    "url_sha256": "2e2ab25ab30d7c4de313aa46275b2ecd2b35128f0886a2a92faf0054b57e9f41",
+    "model": "tap31_qonly_s0",
+    "kind": "tap",
+    "config": {
+      "e": 6,
+      "h": 24,
+      "levels": 31,
+      "k": 3,
+      "q": 1,
+      "slope": 6.0,
+      "skip": 0.0
+    },
+    "params": 1713,
+    "levels": 31,
+    "program_chars": 733,
+    "weight_digits": 2555,
+    "payload_bytes": 3291,
+    "url_chars": 3314,
+    "qr_version": 31,
+    "data_bits": 14589,
+    "slack_bits": 155,
+    "segments": [
+      "alnum:22",
+      "byte:737",
+      "numeric:2555"
+    ],
+    "val_bpc": 2.4108335948531696,
+    "tensors": [
+      {
+        "name": "emb",
+        "shape": [
+          39,
+          6
+        ],
+        "scale": 0.3194,
+        "levels": 31
+      },
+      {
+        "name": "w1",
+        "shape": [
+          24,
+          19
+        ],
+        "scale": 0.2081,
+        "levels": 31
+      },
+      {
+        "name": "b1",
+        "shape": [
+          24
+        ],
+        "scale": 0.2146,
+        "levels": 31
+      },
+      {
+        "name": "w2",
+        "shape": [
+          39,
+          24
+        ],
+        "scale": 0.1726,
+        "levels": 31
+      },
+      {
+        "name": "b2",
+        "shape": [
+          39
+        ],
+        "scale": 0.1605,
+        "levels": 31
+      },
+      {
+        "name": "qk",
+        "shape": [
+          4,
+          6
+        ],
+        "scale": 0.03384,
+        "levels": 31
+      }
+    ],
+    "zxing_exact": true,
+    "node_bpc": 2.4108335948531674,
+    "validation_chars": 2521,
+    "probability_comparisons": 98319,
+    "max_logprob_error": 1.4210854715202004e-14,
+    "novel_pct": 97.15,
+    "over24_pct": 3.3,
+    "samples": [
+      "glm-4.5-1b",
+      "gpt-vmab-hea-245-cor",
+      "gtm-5p7-vp",
+      "gpt-5.6-1b",
+      "qwen3-medius",
+      "cyv-4.8-codevinstrus",
+      "onstral",
+      "mistra-4.1-5",
+      "nllargevma-7.8-0",
+      "lite-3-flash"
+    ],
+    "sample_count": 2000,
+    "sample_seed": 1,
+    "sample_temperature": 0.8,
+    "longest_sample": 34,
+    "rng_draws": 31708
+  },
+  {
+    "url_sha256": "4e1556333191d774d20f36cedceb55c46ae3545b50efddc184ed6c17592843f8",
+    "model": "tap21_h25_lsq_fresh_s0",
+    "kind": "tap",
+    "config": {
+      "e": 6,
+      "h": 25,
+      "levels": 21,
+      "k": 3,
+      "q": 1,
+      "slope": 6.0,
+      "skip": 0.0,
+      "lsq": true
+    },
+    "params": 1772,
+    "levels": 21,
+    "program_chars": 732,
+    "weight_digits": 2344,
+    "payload_bytes": 3079,
+    "url_chars": 3102,
+    "qr_version": 30,
+    "data_bits": 13878,
+    "slack_bits": 2,
+    "segments": [
+      "alnum:22",
+      "byte:736",
+      "numeric:2344"
+    ],
+    "val_bpc": 2.4174611346918,
+    "tensors": [
+      {
+        "name": "emb",
+        "shape": [
+          39,
+          6
+        ],
+        "scale": 0.2078,
+        "levels": 21
+      },
+      {
+        "name": "w1",
+        "shape": [
+          25,
+          19
+        ],
+        "scale": 0.1664,
+        "levels": 21
+      },
+      {
+        "name": "b1",
+        "shape": [
+          25
+        ],
+        "scale": 0.2525,
+        "levels": 21
+      },
+      {
+        "name": "w2",
+        "shape": [
+          39,
+          25
+        ],
+        "scale": 0.1126,
+        "levels": 21
+      },
+      {
+        "name": "b2",
+        "shape": [
+          39
+        ],
+        "scale": 0.1347,
+        "levels": 21
+      },
+      {
+        "name": "qk",
+        "shape": [
+          4,
+          6
+        ],
+        "scale": 0.0622,
+        "levels": 21
+      }
+    ],
+    "zxing_exact": true,
+    "node_bpc": 2.4174611346917967,
+    "validation_chars": 2521,
+    "probability_comparisons": 98319,
+    "max_logprob_error": 1.0658141036401503e-14,
+    "novel_pct": 97.9,
+    "over24_pct": 4.3,
+    "samples": [
+      "flas5-kimi-k24-tuh",
+      "kimax-mini-o-ow-sotast",
+      "deepseek-2eis",
+      "gemistral-1-vl-3b-instruct",
+      "claude-ount-1.7",
+      "gro-code-25b-it",
+      "grok-4-ss",
+      "deepseed-spard-r1-707",
+      "llamba-3-coder-4-3",
+      "mistral-mediumtrbn2"
+    ],
+    "sample_count": 2000,
+    "sample_seed": 1,
+    "sample_temperature": 0.8,
+    "longest_sample": 35,
+    "rng_draws": 33333
+  },
+  {
+    "url_sha256": "48b7bf0dcd5023ed0e33322d0e54091f64a714fb13bf27e316f96aab453a8358",
+    "model": "tap31_from31_init",
+    "kind": "tap",
+    "config": {
+      "e": 6,
+      "h": 24,
+      "levels": 31,
+      "k": 3,
+      "q": 1,
+      "slope": 6.0,
+      "skip": 0.0
+    },
+    "params": 1713,
+    "levels": 31,
+    "program_chars": 734,
+    "weight_digits": 2555,
+    "payload_bytes": 3292,
+    "url_chars": 3315,
+    "qr_version": 31,
+    "data_bits": 14597,
+    "slack_bits": 147,
+    "segments": [
+      "alnum:22",
+      "byte:738",
+      "numeric:2555"
+    ],
+    "val_bpc": 2.4181551829673333,
+    "tensors": [
+      {
+        "name": "emb",
+        "shape": [
+          39,
+          6
+        ],
+        "scale": 0.3194,
+        "levels": 31
+      },
+      {
+        "name": "w1",
+        "shape": [
+          24,
+          19
+        ],
+        "scale": 0.2081,
+        "levels": 31
+      },
+      {
+        "name": "b1",
+        "shape": [
+          24
+        ],
+        "scale": 0.2146,
+        "levels": 31
+      },
+      {
+        "name": "w2",
+        "shape": [
+          39,
+          24
+        ],
+        "scale": 0.1726,
+        "levels": 31
+      },
+      {
+        "name": "b2",
+        "shape": [
+          39
+        ],
+        "scale": 0.1605,
+        "levels": 31
+      },
+      {
+        "name": "qk",
+        "shape": [
+          4,
+          6
+        ],
+        "scale": 0.001752,
+        "levels": 31
+      }
+    ],
+    "zxing_exact": true,
+    "node_bpc": 2.4181551829673342,
+    "validation_chars": 2521,
+    "probability_comparisons": 98319,
+    "max_logprob_error": 1.4210854715202004e-14,
+    "novel_pct": 96.35,
+    "over24_pct": 3.2,
+    "samples": [
+      "glm-4.5-1b",
+      "gpt-vmab-hea-245-cor",
+      "gtm-5p7-vp",
+      "gpt-5.6-1b",
+      "qwen3-medius",
+      "cyv-4npt-5",
+      "qwen3-8b-instruct",
+      "mistra-4.1-5",
+      "nllargevma-7.8-0",
+      "lite-3-flash"
+    ],
+    "sample_count": 2000,
+    "sample_seed": 1,
+    "sample_temperature": 0.8,
+    "longest_sample": 35,
+    "rng_draws": 31750
+  },
+  {
+    "url_sha256": "f92d60b4c04a793466883822a5eea3921d5abadd6b69022afaa9b6ecc6bc395f",
+    "model": "tap45_h22_skip0_soft3_s0",
+    "kind": "tap",
+    "config": {
+      "e": 6,
+      "h": 22,
+      "levels": 45,
+      "k": 3,
+      "q": 1,
+      "slope": 6.0,
+      "skip": 0.0
+    },
+    "params": 1595,
+    "levels": 45,
+    "program_chars": 733,
+    "weight_digits": 2637,
+    "payload_bytes": 3373,
+    "url_chars": 3396,
+    "qr_version": 32,
+    "data_bits": 14862,
+    "slack_bits": 778,
+    "segments": [
+      "alnum:22",
+      "byte:737",
+      "numeric:2637"
+    ],
+    "val_bpc": 2.445458216880248,
+    "tensors": [
+      {
+        "name": "emb",
+        "shape": [
+          39,
+          6
+        ],
+        "scale": 0.2343,
+        "levels": 45
+      },
+      {
+        "name": "w1",
+        "shape": [
+          22,
+          19
+        ],
+        "scale": 0.1471,
+        "levels": 45
+      },
+      {
+        "name": "b1",
+        "shape": [
+          22
+        ],
+        "scale": 0.1413,
+        "levels": 45
+      },
+      {
+        "name": "w2",
+        "shape": [
+          39,
+          22
+        ],
+        "scale": 0.1203,
+        "levels": 45
+      },
+      {
+        "name": "b2",
+        "shape": [
+          39
+        ],
+        "scale": 0.1587,
+        "levels": 45
+      },
+      {
+        "name": "qk",
+        "shape": [
+          4,
+          6
+        ],
+        "scale": 0.02512,
+        "levels": 45
+      }
+    ],
+    "zxing_exact": true,
+    "node_bpc": 2.4454582168802426,
+    "validation_chars": 2521,
+    "probability_comparisons": 98319,
+    "max_logprob_error": 1.4210854715202004e-14,
+    "novel_pct": 98.15,
+    "over24_pct": 5.95,
+    "samples": [
+      "glm-3.5-14b-instruct",
+      "databricks-gs-4-vl-st",
+      "gpt-5.5-1lash",
+      "claude-opa",
+      "yrdelpome-tla-gemitb-26b",
+      "ji-k3-cod-5.1",
+      "geministruct-late",
+      "gmand-c-lpterest",
+      "pla-1-plaxd-2.5",
+      "gemma-3"
+    ],
+    "sample_count": 2000,
+    "sample_seed": 1,
+    "sample_temperature": 0.8,
+    "longest_sample": 33,
+    "rng_draws": 33007
+  },
+  {
+    "url_sha256": "37f013410c537a1931b19e71652334a833548d2090c6e9dd512aa3e56463534d",
+    "model": "tap31_h24_skip0_soft3_s0",
+    "kind": "tap",
+    "config": {
+      "e": 6,
+      "h": 24,
+      "levels": 31,
+      "k": 3,
+      "q": 1,
+      "slope": 6.0,
+      "skip": 0.0
+    },
+    "params": 1713,
+    "levels": 31,
+    "program_chars": 733,
+    "weight_digits": 2555,
+    "payload_bytes": 3291,
+    "url_chars": 3314,
+    "qr_version": 31,
+    "data_bits": 14589,
+    "slack_bits": 155,
+    "segments": [
+      "alnum:22",
+      "byte:737",
+      "numeric:2555"
+    ],
+    "val_bpc": 2.46019137625843,
+    "tensors": [
+      {
+        "name": "emb",
+        "shape": [
+          39,
+          6
+        ],
+        "scale": 0.3513,
+        "levels": 31
+      },
+      {
+        "name": "w1",
+        "shape": [
+          24,
+          19
+        ],
+        "scale": 0.2148,
+        "levels": 31
+      },
+      {
+        "name": "b1",
+        "shape": [
+          24
+        ],
+        "scale": 0.1888,
+        "levels": 31
+      },
+      {
+        "name": "w2",
+        "shape": [
+          39,
+          24
+        ],
+        "scale": 0.189,
+        "levels": 31
+      },
+      {
+        "name": "b2",
+        "shape": [
+          39
+        ],
+        "scale": 0.1959,
+        "levels": 31
+      },
+      {
+        "name": "qk",
+        "shape": [
+          4,
+          6
+        ],
+        "scale": 0.001752,
+        "levels": 31
+      }
+    ],
+    "zxing_exact": true,
+    "node_bpc": 2.4601913762584235,
+    "validation_chars": 2521,
+    "probability_comparisons": 98319,
+    "max_logprob_error": 1.5987211554602254e-14,
+    "novel_pct": 98.1,
+    "over24_pct": 5.05,
+    "samples": [
+      "glm-2.5-12b",
+      "montobpik-1.1-flast",
+      "grok-v4.8-7b-flasr1",
+      "qwen3-72b",
+      "deepe-v3-47b-instruct",
+      "gpt-5-mini-1.5-flaceeh",
+      "glm-4p7-cure-late",
+      "gpt-5.2",
+      "mus-5-7lestruct-3",
+      "qwen3.2-13b"
+    ],
+    "sample_count": 2000,
+    "sample_seed": 1,
+    "sample_temperature": 0.8,
+    "longest_sample": 33,
+    "rng_draws": 33190
+  },
+  {
+    "url_sha256": "37f013410c537a1931b19e71652334a833548d2090c6e9dd512aa3e56463534d",
+    "model": "tap31_init_skip0",
+    "kind": "tap",
+    "config": {
+      "e": 6,
+      "h": 24,
+      "levels": 31,
+      "k": 3,
+      "q": 1,
+      "slope": 6.0,
+      "skip": 0.0
+    },
+    "params": 1713,
+    "levels": 31,
+    "program_chars": 733,
+    "weight_digits": 2555,
+    "payload_bytes": 3291,
+    "url_chars": 3314,
+    "qr_version": 31,
+    "data_bits": 14589,
+    "slack_bits": 155,
+    "segments": [
+      "alnum:22",
+      "byte:737",
+      "numeric:2555"
+    ],
+    "val_bpc": 2.46019137625843,
+    "tensors": [
+      {
+        "name": "emb",
+        "shape": [
+          39,
+          6
+        ],
+        "scale": 0.3513,
+        "levels": 31
+      },
+      {
+        "name": "w1",
+        "shape": [
+          24,
+          19
+        ],
+        "scale": 0.2148,
+        "levels": 31
+      },
+      {
+        "name": "b1",
+        "shape": [
+          24
+        ],
+        "scale": 0.1888,
+        "levels": 31
+      },
+      {
+        "name": "w2",
+        "shape": [
+          39,
+          24
+        ],
+        "scale": 0.189,
+        "levels": 31
+      },
+      {
+        "name": "b2",
+        "shape": [
+          39
+        ],
+        "scale": 0.1959,
+        "levels": 31
+      },
+      {
+        "name": "qk",
+        "shape": [
+          4,
+          6
+        ],
+        "scale": 0.001752,
+        "levels": 31
+      }
+    ],
+    "zxing_exact": true,
+    "node_bpc": 2.4601913762584235,
+    "validation_chars": 2521,
+    "probability_comparisons": 98319,
+    "max_logprob_error": 1.5987211554602254e-14,
+    "novel_pct": 98.1,
+    "over24_pct": 5.05,
+    "samples": [
+      "glm-2.5-12b",
+      "montobpik-1.1-flast",
+      "grok-v4.8-7b-flasr1",
+      "qwen3-72b",
+      "deepe-v3-47b-instruct",
+      "gpt-5-mini-1.5-flaceeh",
+      "glm-4p7-cure-late",
+      "gpt-5.2",
+      "mus-5-7lestruct-3",
+      "qwen3.2-13b"
+    ],
+    "sample_count": 2000,
+    "sample_seed": 1,
+    "sample_temperature": 0.8,
+    "longest_sample": 33,
+    "rng_draws": 33190
+  },
+  {
+    "url_sha256": "75d39a47f592b9107670bff14759fd7c51fc46383d38e3aa4b6569f82c35cb75",
+    "model": "tap31_s6_s0",
+    "kind": "tap",
+    "config": {
+      "e": 6,
+      "h": 24,
+      "levels": 31,
+      "k": 3,
+      "q": 1,
+      "slope": 6.0
+    },
+    "params": 1713,
+    "levels": 31,
+    "program_chars": 746,
+    "weight_digits": 2555,
+    "payload_bytes": 3304,
+    "url_chars": 3327,
+    "qr_version": 31,
+    "data_bits": 14693,
+    "slack_bits": 51,
+    "segments": [
+      "alnum:22",
+      "byte:750",
+      "numeric:2555"
+    ],
+    "val_bpc": 2.4605812042624233,
+    "tensors": [
+      {
+        "name": "emb",
+        "shape": [
+          39,
+          6
+        ],
+        "scale": 0.3591,
+        "levels": 31
+      },
+      {
+        "name": "w1",
+        "shape": [
+          24,
+          19
+        ],
+        "scale": 0.2136,
+        "levels": 31
+      },
+      {
+        "name": "b1",
+        "shape": [
+          24
+        ],
+        "scale": 0.1921,
+        "levels": 31
+      },
+      {
+        "name": "w2",
+        "shape": [
+          39,
+          24
+        ],
+        "scale": 0.1906,
+        "levels": 31
+      },
+      {
+        "name": "b2",
+        "shape": [
+          39
+        ],
+        "scale": 0.1949,
+        "levels": 31
+      },
+      {
+        "name": "qk",
+        "shape": [
+          4,
+          6
+        ],
+        "scale": 0.04304,
+        "levels": 31
+      }
+    ],
+    "zxing_exact": true,
+    "node_bpc": 2.4605812042624167,
+    "validation_chars": 2521,
+    "probability_comparisons": 98319,
+    "max_logprob_error": 1.7763568394002505e-14,
+    "novel_pct": 97.95,
+    "over24_pct": 5.55,
+    "samples": [
+      "glm-2.5-122b-instruct",
+      "code-a3b-fewes29b",
+      "qwen3-70b-instra-1.1-70b-l",
+      "ctlaietrel",
+      "qwen3-5-soninr",
+      "glm-5.3-4",
+      "gpt-5-instruct-latest",
+      "gpobar",
+      "contore-v2p5-1",
+      "llame-3-425-13b"
+    ],
+    "sample_count": 2000,
+    "sample_seed": 1,
+    "sample_temperature": 0.8,
+    "longest_sample": 36,
+    "rng_draws": 31696
+  },
+  {
+    "url_sha256": "e9b93ec12115abc9c2463b099328439c3d4e5cc5f5830fe619570e8f2f419cb4",
+    "model": "hybrid31_h24_q1",
+    "kind": "hybrid",
+    "config": {
+      "e": 6,
+      "h": 24,
+      "levels": 31,
+      "k": 3,
+      "q": 1,
+      "slope": 0.5
+    },
+    "params": 1728,
+    "levels": 31,
+    "program_chars": 819,
+    "weight_digits": 2578,
+    "payload_bytes": 3400,
+    "url_chars": 3423,
+    "qr_version": 32,
+    "data_bits": 15354,
+    "slack_bits": 286,
+    "segments": [
+      "alnum:22",
+      "byte:823",
+      "numeric:2578"
+    ],
+    "val_bpc": 2.465371403981403,
+    "tensors": [
+      {
+        "name": "emb",
+        "shape": [
+          39,
+          6
+        ],
+        "scale": 0.4013,
+        "levels": 31
+      },
+      {
+        "name": "w1",
+        "shape": [
+          24,
+          19
+        ],
+        "scale": 0.2213,
+        "levels": 31
+      },
+      {
+        "name": "b1",
+        "shape": [
+          24
+        ],
+        "scale": 0.2235,
+        "levels": 31
+      },
+      {
+        "name": "w2",
+        "shape": [
+          39,
+          24
+        ],
+        "scale": 0.1801,
+        "levels": 31
+      },
+      {
+        "name": "b2",
+        "shape": [
+          39
+        ],
+        "scale": 0.2213,
+        "levels": 31
+      },
+      {
+        "name": "qk",
+        "shape": [
+          2,
+          19
+        ],
+        "scale": 0.04244,
+        "levels": 31
+      },
+      {
+        "name": "gate",
+        "shape": [
+          1
+        ],
+        "scale": 0.008846,
+        "levels": 31
+      }
+    ],
+    "zxing_exact": true,
+    "node_bpc": 2.465371403981404,
+    "validation_chars": 2521,
+    "probability_comparisons": 98319,
+    "max_logprob_error": 1.0658141036401503e-14,
+    "novel_pct": 97.1,
+    "over24_pct": 3.5,
+    "samples": [
+      "glm-3.6-13b-instruct",
+      "dat-malraicht",
+      "llrab-slle-gemo",
+      "code-laraninkis-1t0",
+      "gpt-5.1-mir-1-flash",
+      "qwen-llama-1-fasr-nis-r",
+      "gustral-n2-8",
+      "llama3.5-plus",
+      "qwen-ara-v3-5-onm",
+      "mistral-pheem-5.1"
+    ],
+    "sample_count": 2000,
+    "sample_seed": 1,
+    "sample_temperature": 0.8,
+    "longest_sample": 34,
+    "rng_draws": 30618
+  },
+  {
+    "url_sha256": "73f08e62f816e7918679c29d6d901b359023e315664cb2238ff99f81482b1eed",
+    "model": "tap45_h21_s6_s0",
+    "kind": "tap",
+    "config": {
+      "e": 6,
+      "h": 21,
+      "levels": 45,
+      "k": 3,
+      "q": 1,
+      "slope": 6.0,
+      "skip": 0.1
+    },
+    "params": 1536,
+    "levels": 45,
+    "program_chars": 745,
+    "weight_digits": 2540,
+    "payload_bytes": 3288,
+    "url_chars": 3311,
+    "qr_version": 31,
+    "data_bits": 14635,
+    "slack_bits": 109,
+    "segments": [
+      "alnum:22",
+      "byte:749",
+      "numeric:2540"
+    ],
+    "val_bpc": 2.482644537767614,
+    "tensors": [
+      {
+        "name": "emb",
+        "shape": [
+          39,
+          6
+        ],
+        "scale": 0.258,
+        "levels": 45
+      },
+      {
+        "name": "w1",
+        "shape": [
+          21,
+          19
+        ],
+        "scale": 0.1582,
+        "levels": 45
+      },
+      {
+        "name": "b1",
+        "shape": [
+          21
+        ],
+        "scale": 0.1448,
+        "levels": 45
+      },
+      {
+        "name": "w2",
+        "shape": [
+          39,
+          21
+        ],
+        "scale": 0.1189,
+        "levels": 45
+      },
+      {
+        "name": "b2",
+        "shape": [
+          39
+        ],
+        "scale": 0.1484,
+        "levels": 45
+      },
+      {
+        "name": "qk",
+        "shape": [
+          4,
+          6
+        ],
+        "scale": 0.02543,
+        "levels": 45
+      }
+    ],
+    "zxing_exact": true,
+    "node_bpc": 2.48264453776761,
+    "validation_chars": 2521,
+    "probability_comparisons": 98319,
+    "max_logprob_error": 1.7763568394002505e-14,
+    "novel_pct": 98.15,
+    "over24_pct": 4.5,
+    "samples": [
+      "glm-3.5-125b-instruct",
+      "cma-4.2-sinus-4p6-sul",
+      "mistron-t-t",
+      "gemellama4",
+      "cugmarneri-pro-f3-co",
+      "pext-laienk-6.0",
+      "meepseek-v4-turba-v4",
+      "gpt-5.3",
+      "motestructar",
+      "com-1p3-42b-chat"
+    ],
+    "sample_count": 2000,
+    "sample_seed": 1,
+    "sample_temperature": 0.8,
+    "longest_sample": 36,
+    "rng_draws": 31575
+  },
+  {
+    "url_sha256": "5947cee08ab453fb4f0defb694d4429518bdafd07cfc90a3d4ff7670b62dc320",
+    "model": "tap31_s1_s0",
+    "kind": "tap",
+    "config": {
+      "e": 6,
+      "h": 24,
+      "levels": 31,
+      "k": 3,
+      "q": 1,
+      "slope": 1.0,
+      "skip": 0.1
+    },
+    "params": 1713,
+    "levels": 31,
+    "program_chars": 746,
+    "weight_digits": 2555,
+    "payload_bytes": 3304,
+    "url_chars": 3327,
+    "qr_version": 31,
+    "data_bits": 14693,
+    "slack_bits": 51,
+    "segments": [
+      "alnum:22",
+      "byte:750",
+      "numeric:2555"
+    ],
+    "val_bpc": 2.4863124518880957,
+    "tensors": [
+      {
+        "name": "emb",
+        "shape": [
+          39,
+          6
+        ],
+        "scale": 0.4141,
+        "levels": 31
+      },
+      {
+        "name": "w1",
+        "shape": [
+          24,
+          19
+        ],
+        "scale": 0.2069,
+        "levels": 31
+      },
+      {
+        "name": "b1",
+        "shape": [
+          24
+        ],
+        "scale": 0.1945,
+        "levels": 31
+      },
+      {
+        "name": "w2",
+        "shape": [
+          39,
+          24
+        ],
+        "scale": 0.1758,
+        "levels": 31
+      },
+      {
+        "name": "b2",
+        "shape": [
+          39
+        ],
+        "scale": 0.2385,
+        "levels": 31
+      },
+      {
+        "name": "qk",
+        "shape": [
+          4,
+          6
+        ],
+        "scale": 0.01375,
+        "levels": 31
+      }
+    ],
+    "zxing_exact": true,
+    "node_bpc": 2.486312451888091,
+    "validation_chars": 2521,
+    "probability_comparisons": 98319,
+    "max_logprob_error": 1.4210854715202004e-14,
+    "novel_pct": 99.4,
+    "over24_pct": 16.8,
+    "samples": [
+      "glm-2.5-1-70b-ith-latest",
+      "minimo-4b-instrunsnel-56b",
+      "cpio-m2-24b",
+      "mish-teminstrh",
+      "qwen3-7ba",
+      "mistral-medita",
+      "gpt-5-flash-lptest",
+      "qwand-rcoderok-plus-tom-1-f0",
+      "sina-maab-inst",
+      "metab-fesongroninh"
+    ],
+    "sample_count": 2000,
+    "sample_seed": 1,
+    "sample_temperature": 0.8,
+    "longest_sample": 42,
+    "rng_draws": 39184
+  },
+  {
+    "url_sha256": "f119f36cb24c9b584936076b3c03b94643b4969716eba4d8f98ba1683a1ca186",
+    "model": "tap23_h27_lsq_transfer",
+    "kind": "tap",
+    "config": {
+      "e": 6,
+      "h": 27,
+      "k": 3,
+      "q": 1,
+      "slope": 6.0,
+      "skip": 0.0,
+      "levels": 23,
+      "lsq": true
+    },
+    "params": 1890,
+    "levels": 23,
+    "program_chars": 734,
+    "weight_digits": 2574,
+    "payload_bytes": 3311,
+    "url_chars": 3334,
+    "qr_version": 31,
+    "data_bits": 14660,
+    "slack_bits": 84,
+    "segments": [
+      "alnum:22",
+      "byte:738",
+      "numeric:2574"
+    ],
+    "val_bpc": 2.496062200597271,
+    "tensors": [
+      {
+        "name": "emb",
+        "shape": [
+          39,
+          6
+        ],
+        "scale": 0.2274,
+        "levels": 23
+      },
+      {
+        "name": "w1",
+        "shape": [
+          27,
+          19
+        ],
+        "scale": 0.1675,
+        "levels": 23
+      },
+      {
+        "name": "b1",
+        "shape": [
+          27
+        ],
+        "scale": 0.2058,
+        "levels": 23
+      },
+      {
+        "name": "w2",
+        "shape": [
+          39,
+          27
+        ],
+        "scale": 0.1194,
+        "levels": 23
+      },
+      {
+        "name": "b2",
+        "shape": [
+          39
+        ],
+        "scale": 0.1818,
+        "levels": 23
+      },
+      {
+        "name": "qk",
+        "shape": [
+          4,
+          6
+        ],
+        "scale": 0.002363,
+        "levels": 23
+      }
+    ],
+    "zxing_exact": true,
+    "node_bpc": 2.496062200597269,
+    "validation_chars": 2521,
+    "probability_comparisons": 98319,
+    "max_logprob_error": 1.2434497875801753e-14,
+    "novel_pct": 98.5,
+    "over24_pct": 2.15,
+    "samples": [
+      "glm-4.7-2.2-8b",
+      "ssata-2-3-codeconus-5-v5-st",
+      "hemma-v3-sha",
+      "hagatd-llamatlerglon",
+      "deepseek-v3.1-pro",
+      "command",
+      "gpgigatd-lro7b",
+      "mes-llama",
+      "mhan-rvatba-onus-1",
+      "mo-4b"
+    ],
+    "sample_count": 2000,
+    "sample_seed": 1,
+    "sample_temperature": 0.8,
+    "longest_sample": 33,
+    "rng_draws": 30611
+  },
+  {
+    "url_sha256": "06dd05cac00caade7d61aec1d173c7a081bf911b9767b9a8b8bed3194e1cff1b",
+    "model": "tap31_h22_s6_s0",
+    "kind": "tap",
+    "config": {
+      "e": 6,
+      "h": 22,
+      "levels": 31,
+      "k": 3,
+      "q": 1,
+      "slope": 6.0,
+      "skip": 0.1
+    },
+    "params": 1595,
+    "levels": 31,
+    "program_chars": 746,
+    "weight_digits": 2379,
+    "payload_bytes": 3128,
+    "url_chars": 3151,
+    "qr_version": 31,
+    "data_bits": 14106,
+    "slack_bits": 638,
+    "segments": [
+      "alnum:22",
+      "byte:750",
+      "numeric:2379"
+    ],
+    "val_bpc": 2.4968626911933613,
+    "tensors": [
+      {
+        "name": "emb",
+        "shape": [
+          39,
+          6
+        ],
+        "scale": 0.3586,
+        "levels": 31
+      },
+      {
+        "name": "w1",
+        "shape": [
+          22,
+          19
+        ],
+        "scale": 0.2188,
+        "levels": 31
+      },
+      {
+        "name": "b1",
+        "shape": [
+          22
+        ],
+        "scale": 0.2204,
+        "levels": 31
+      },
+      {
+        "name": "w2",
+        "shape": [
+          39,
+          22
+        ],
+        "scale": 0.1743,
+        "levels": 31
+      },
+      {
+        "name": "b2",
+        "shape": [
+          39
+        ],
+        "scale": 0.2147,
+        "levels": 31
+      },
+      {
+        "name": "qk",
+        "shape": [
+          4,
+          6
+        ],
+        "scale": 0.03687,
+        "levels": 31
+      }
+    ],
+    "zxing_exact": true,
+    "node_bpc": 2.4968626911933596,
+    "validation_chars": 2521,
+    "probability_comparisons": 98319,
+    "max_logprob_error": 1.4210854715202004e-14,
+    "novel_pct": 98.4,
+    "over24_pct": 8.35,
+    "samples": [
+      "glm-3.6-13b-instruct",
+      "clagrm-3.7-fus-4p6-vr",
+      "gpt-5.6-1b-inshe-qw-nus",
+      "cyllama-3-2b-instrun-prop",
+      "glm-5.2-7",
+      "gpt-5-minis.4p7-ge-v3",
+      "gpt-5-8-gpt-5-flash",
+      "d-tp5",
+      "sma0-pla-v3-flash-pro-20b",
+      "llama-v2.0"
+    ],
+    "sample_count": 2000,
+    "sample_seed": 1,
+    "sample_temperature": 0.8,
+    "longest_sample": 37,
+    "rng_draws": 34787
+  },
+  {
+    "url_sha256": "0e7351f4d071f41e42f96e8e2056bbad346c019371cf470af892a98da913a2e4",
+    "model": "tap23_h22_s6_s0",
+    "kind": "tap",
+    "config": {
+      "e": 6,
+      "h": 22,
+      "levels": 23,
+      "k": 3,
+      "q": 1,
+      "slope": 6.0,
+      "skip": 0.1
+    },
+    "params": 1595,
+    "levels": 23,
+    "program_chars": 746,
+    "weight_digits": 2173,
+    "payload_bytes": 2922,
+    "url_chars": 2945,
+    "qr_version": 30,
+    "data_bits": 13420,
+    "slack_bits": 460,
+    "segments": [
+      "alnum:22",
+      "byte:750",
+      "numeric:2173"
+    ],
+    "val_bpc": 2.5874773875579864,
+    "tensors": [
+      {
+        "name": "emb",
+        "shape": [
+          39,
+          6
+        ],
+        "scale": 0.4756,
+        "levels": 23
+      },
+      {
+        "name": "w1",
+        "shape": [
+          22,
+          19
+        ],
+        "scale": 0.3035,
+        "levels": 23
+      },
+      {
+        "name": "b1",
+        "shape": [
+          22
+        ],
+        "scale": 0.3104,
+        "levels": 23
+      },
+      {
+        "name": "w2",
+        "shape": [
+          39,
+          22
+        ],
+        "scale": 0.2293,
+        "levels": 23
+      },
+      {
+        "name": "b2",
+        "shape": [
+          39
+        ],
+        "scale": 0.2926,
+        "levels": 23
+      },
+      {
+        "name": "qk",
+        "shape": [
+          4,
+          6
+        ],
+        "scale": 0.05198,
+        "levels": 23
+      }
+    ],
+    "zxing_exact": true,
+    "node_bpc": 2.587477387557983,
+    "validation_chars": 2521,
+    "probability_comparisons": 98319,
+    "max_logprob_error": 1.4210854715202004e-14,
+    "novel_pct": 97.75,
+    "over24_pct": 2.95,
+    "samples": [
+      "glm-3.5-12b-it",
+      "sonni-2-2-70b",
+      "momita-gutetuiri-k24b",
+      "codeak-v3b",
+      "deeph-vini-rob-2lirge",
+      "glm-5.8-70b",
+      "minima",
+      "gpt-4.5-core-vis1",
+      "dee-4.0-8-70b-instruct",
+      "llama-1p3-20b"
+    ],
+    "sample_count": 2000,
+    "sample_seed": 1,
+    "sample_temperature": 0.8,
+    "longest_sample": 33,
+    "rng_draws": 30436
+  },
+  {
+    "url_sha256": "41f875c79ac943ab8f2d296791c0c28d9dc925302e20f0101eb41e0643dc0607",
+    "model": "tap23_h22_skip0_soft3_s0",
+    "kind": "tap",
+    "config": {
+      "e": 6,
+      "h": 22,
+      "levels": 23,
+      "k": 3,
+      "q": 1,
+      "slope": 6.0,
+      "skip": 0.0
+    },
+    "params": 1595,
+    "levels": 23,
+    "program_chars": 732,
+    "weight_digits": 2173,
+    "payload_bytes": 2908,
+    "url_chars": 2931,
+    "qr_version": 30,
+    "data_bits": 13308,
+    "slack_bits": 572,
+    "segments": [
+      "alnum:22",
+      "byte:736",
+      "numeric:2173"
+    ],
+    "val_bpc": 2.602166211237326,
+    "tensors": [
+      {
+        "name": "emb",
+        "shape": [
+          39,
+          6
+        ],
+        "scale": 0.4801,
+        "levels": 23
+      },
+      {
+        "name": "w1",
+        "shape": [
+          22,
+          19
+        ],
+        "scale": 0.283,
+        "levels": 23
+      },
+      {
+        "name": "b1",
+        "shape": [
+          22
+        ],
+        "scale": 0.2635,
+        "levels": 23
+      },
+      {
+        "name": "w2",
+        "shape": [
+          39,
+          22
+        ],
+        "scale": 0.2535,
+        "levels": 23
+      },
+      {
+        "name": "b2",
+        "shape": [
+          39
+        ],
+        "scale": 0.2787,
+        "levels": 23
+      },
+      {
+        "name": "qk",
+        "shape": [
+          4,
+          6
+        ],
+        "scale": 0.03409,
+        "levels": 23
+      }
+    ],
+    "zxing_exact": true,
+    "node_bpc": 2.6021662112373267,
+    "validation_chars": 2521,
+    "probability_comparisons": 98319,
+    "max_logprob_error": 1.4210854715202004e-14,
+    "novel_pct": 98.45,
+    "over24_pct": 7.5,
+    "samples": [
+      "gemma-lalerast",
+      "sonk-4-21b-instruct",
+      "llripks-glm-4ma",
+      "bugr-5-8-heanst-5wf",
+      "gpt-5-5.7-lare-v2unt-fas",
+      "minimo",
+      "gpt-5-mistrr4-71b-49b",
+      "gpt-5-fastrum-7p5-min",
+      "llame-chat-ceet-710b",
+      "qwen3-flastrud-r"
+    ],
+    "sample_count": 2000,
+    "sample_seed": 1,
+    "sample_temperature": 0.8,
+    "longest_sample": 36,
+    "rng_draws": 33272
+  },
+  {
+    "url_sha256": "45aadc07b25ba24a4c3389b20c7510e0d9e14d5fc1d31b96d243fecdc3f899f1",
+    "model": "tf12f16_value_norm45_s0",
+    "kind": "tf",
+    "config": {
+      "d": 12,
+      "f": 16,
+      "heads": 1,
+      "q": 4,
+      "levels": 45,
+      "norm": true,
+      "context": 0,
+      "layers": 1,
+      "slope": 1.0,
+      "value": true,
+      "untie": false,
+      "window": 1,
+      "sinpos": false
+    },
+    "params": 1171,
+    "levels": 45,
+    "program_chars": 918,
+    "weight_digits": 1936,
+    "payload_bytes": 2857,
+    "url_chars": 2880,
+    "qr_version": 31,
+    "data_bits": 14006,
+    "slack_bits": 738,
+    "segments": [
+      "alnum:22",
+      "byte:922",
+      "numeric:1936"
+    ],
+    "val_bpc": 2.634987549040428,
+    "tensors": [
+      {
+        "name": "emb",
+        "shape": [
+          39,
+          12
+        ],
+        "scale": 0.1311,
+        "levels": 45
+      },
+      {
+        "name": "pos",
+        "shape": [
+          12
+        ],
+        "scale": 0.01788,
+        "levels": 45
+      },
+      {
+        "name": "qk",
+        "shape": [
+          8,
+          12
+        ],
+        "scale": 0.03415,
+        "levels": 45
+      },
+      {
+        "name": "value",
+        "shape": [
+          12,
+          12
+        ],
+        "scale": 0.05721,
+        "levels": 45
+      },
+      {
+        "name": "w1",
+        "shape": [
+          16,
+          12
+        ],
+        "scale": 0.2047,
+        "levels": 45
+      },
+      {
+        "name": "b1",
+        "shape": [
+          16
+        ],
+        "scale": 0.08739,
+        "levels": 45
+      },
+      {
+        "name": "w2",
+        "shape": [
+          12,
+          16
+        ],
+        "scale": 0.08252,
+        "levels": 45
+      },
+      {
+        "name": "b2",
+        "shape": [
+          12
+        ],
+        "scale": 0.04583,
+        "levels": 45
+      },
+      {
+        "name": "out",
+        "shape": [
+          39
+        ],
+        "scale": 0.1387,
+        "levels": 45
+      }
+    ],
+    "zxing_exact": true,
+    "node_bpc": 2.6349875490404293,
+    "validation_chars": 2521,
+    "probability_comparisons": 98319,
+    "max_logprob_error": 2.3092638912203256e-14,
+    "novel_pct": 98.4,
+    "over24_pct": 6.85,
+    "samples": [
+      "glm-4-qw03-5-plus",
+      "noi-2.0-flash",
+      "granixtros-7b",
+      "lami-2p5-1-11-flash-1",
+      "xlamistral-nma-1-code-von2",
+      "codept-0-inqw-4.4-v6",
+      "viphicod-7b",
+      "mini",
+      "nostral-flash",
+      "mid-v2-3-flash"
+    ],
+    "sample_count": 2000,
+    "sample_seed": 1,
+    "sample_temperature": 0.8,
+    "longest_sample": 36,
+    "rng_draws": 33420
+  },
+  {
+    "url_sha256": "b3b8a55afe8e39bc2901de884a6a5e3d7c93eb13bb11f035211d05670e2aea54",
+    "model": "tf12f20_win3_s0",
+    "kind": "tf",
+    "config": {
+      "d": 12,
+      "f": 20,
+      "heads": 2,
+      "q": 2,
+      "levels": 61,
+      "norm": false,
+      "context": 0,
+      "layers": 1,
+      "slope": 1.0,
+      "value": false,
+      "untie": false,
+      "window": 3,
+      "sinpos": false
+    },
+    "params": 1127,
+    "levels": 61,
+    "program_chars": 904,
+    "weight_digits": 2013,
+    "payload_bytes": 2920,
+    "url_chars": 2943,
+    "qr_version": 31,
+    "data_bits": 14150,
+    "slack_bits": 594,
+    "segments": [
+      "alnum:22",
+      "byte:908",
+      "numeric:2013"
+    ],
+    "val_bpc": 2.637273674786263,
+    "tensors": [
+      {
+        "name": "emb",
+        "shape": [
+          39,
+          12
+        ],
+        "scale": 0.0643,
+        "levels": 61
+      },
+      {
+        "name": "pos",
+        "shape": [
+          12
+        ],
+        "scale": 0.01364,
+        "levels": 61
+      },
+      {
+        "name": "qk",
+        "shape": [
+          8,
+          12
+        ],
+        "scale": 0.06092,
+        "levels": 61
+      },
+      {
+        "name": "w1",
+        "shape": [
+          20,
+          12
+        ],
+        "scale": 0.09615,
+        "levels": 61
+      },
+      {
+        "name": "b1",
+        "shape": [
+          20
+        ],
+        "scale": 0.09815,
+        "levels": 61
+      },
+      {
+        "name": "w2",
+        "shape": [
+          12,
+          20
+        ],
+        "scale": 0.08582,
+        "levels": 61
+      },
+      {
+        "name": "b2",
+        "shape": [
+          12
+        ],
+        "scale": 0.03138,
+        "levels": 61
+      },
+      {
+        "name": "out",
+        "shape": [
+          39
+        ],
+        "scale": 0.1775,
+        "levels": 61
+      }
+    ],
+    "zxing_exact": true,
+    "node_bpc": 2.637273674786266,
+    "validation_chars": 2521,
+    "probability_comparisons": 98319,
+    "max_logprob_error": 1.4210854715202004e-14,
+    "novel_pct": 98.1,
+    "over24_pct": 2.8,
+    "samples": [
+      "deep",
+      "gpt-5-9b-itect",
+      "deal-pgeem-1-v2-7ut",
+      "swel3-fast",
+      "cv-s-fast-fast-1",
+      "xwel3-flasp",
+      "misgelp-okrtrea",
+      "mistra-cla3-224b",
+      "tgeum4-max-0b",
+      "code-4.lini-kx"
+    ],
+    "sample_count": 2000,
+    "sample_seed": 1,
+    "sample_temperature": 0.8,
+    "longest_sample": 54,
+    "rng_draws": 30080
+  },
+  {
+    "url_sha256": "c6526c8095711e93059e35b4b11d8a91e0f2192463eb69bdaec72890c159fca6",
+    "model": "tf12f24_norm45_h1_s0",
+    "kind": "tf",
+    "config": {
+      "d": 12,
+      "f": 24,
+      "heads": 1,
+      "q": 4,
+      "levels": 45,
+      "norm": true,
+      "context": 0,
+      "layers": 1,
+      "slope": 1.0,
+      "value": false,
+      "untie": false,
+      "window": 1,
+      "sinpos": false
+    },
+    "params": 1227,
+    "levels": 45,
+    "program_chars": 897,
+    "weight_digits": 2029,
+    "payload_bytes": 2929,
+    "url_chars": 2952,
+    "qr_version": 31,
+    "data_bits": 14148,
+    "slack_bits": 596,
+    "segments": [
+      "alnum:22",
+      "byte:901",
+      "numeric:2029"
+    ],
+    "val_bpc": 2.669451725358929,
+    "tensors": [
+      {
+        "name": "emb",
+        "shape": [
+          39,
+          12
+        ],
+        "scale": 0.1036,
+        "levels": 45
+      },
+      {
+        "name": "pos",
+        "shape": [
+          12
+        ],
+        "scale": 0.01034,
+        "levels": 45
+      },
+      {
+        "name": "qk",
+        "shape": [
+          8,
+          12
+        ],
+        "scale": 0.03785,
+        "levels": 45
+      },
+      {
+        "name": "w1",
+        "shape": [
+          24,
+          12
+        ],
+        "scale": 0.1799,
+        "levels": 45
+      },
+      {
+        "name": "b1",
+        "shape": [
+          24
+        ],
+        "scale": 0.08945,
+        "levels": 45
+      },
+      {
+        "name": "w2",
+        "shape": [
+          12,
+          24
+        ],
+        "scale": 0.1007,
+        "levels": 45
+      },
+      {
+        "name": "b2",
+        "shape": [
+          12
+        ],
+        "scale": 0.05668,
+        "levels": 45
+      },
+      {
+        "name": "out",
+        "shape": [
+          39
+        ],
+        "scale": 0.1493,
+        "levels": 45
+      }
+    ],
+    "zxing_exact": true,
+    "node_bpc": 2.6694517253589263,
+    "validation_chars": 2521,
+    "probability_comparisons": 98319,
+    "max_logprob_error": 2.6645352591003757e-14,
+    "novel_pct": 97.65,
+    "over24_pct": 3.2,
+    "samples": [
+      "glm-2-ma-l-flastrok-4",
+      "claude-mt",
+      "gremaxinstral-g",
+      "llama-sal",
+      "gemi-k42",
+      "cyrinnqw-getbinspsh-5-7b",
+      "glm-5.3-pr4arcer",
+      "omnixt-vflashet",
+      "gplus-7",
+      "morininstral-1-pl"
+    ],
+    "sample_count": 2000,
+    "sample_seed": 1,
+    "sample_temperature": 0.8,
+    "longest_sample": 30,
+    "rng_draws": 30799
+  },
+  {
+    "url_sha256": "9dad996edb231c2f824cdf8e2fa183b5327f8bb7787ebea67c17277219c428a2",
+    "model": "tf8f32_out_norm45_s0",
+    "kind": "tf",
+    "config": {
+      "d": 8,
+      "f": 32,
+      "heads": 2,
+      "q": 2,
+      "levels": 45,
+      "norm": true,
+      "context": 0,
+      "layers": 1,
+      "slope": 1.0,
+      "value": false,
+      "untie": true,
+      "window": 1,
+      "sinpos": false
+    },
+    "params": 1287,
+    "levels": 45,
+    "program_chars": 960,
+    "weight_digits": 2128,
+    "payload_bytes": 3091,
+    "url_chars": 3114,
+    "qr_version": 32,
+    "data_bits": 14982,
+    "slack_bits": 658,
+    "segments": [
+      "alnum:22",
+      "byte:964",
+      "numeric:2128"
+    ],
+    "val_bpc": 2.679087256684981,
+    "tensors": [
+      {
+        "name": "emb",
+        "shape": [
+          39,
+          8
+        ],
+        "scale": 0.1357,
+        "levels": 45
+      },
+      {
+        "name": "pos",
+        "shape": [
+          8
+        ],
+        "scale": 0.01313,
+        "levels": 45
+      },
+      {
+        "name": "qk",
+        "shape": [
+          8,
+          8
+        ],
+        "scale": 0.04213,
+        "levels": 45
+      },
+      {
+        "name": "w1",
+        "shape": [
+          32,
+          8
+        ],
+        "scale": 0.1579,
+        "levels": 45
+      },
+      {
+        "name": "b1",
+        "shape": [
+          32
+        ],
+        "scale": 0.09538,
+        "levels": 45
+      },
+      {
+        "name": "w2",
+        "shape": [
+          8,
+          32
+        ],
+        "scale": 0.05303,
+        "levels": 45
+      },
+      {
+        "name": "b2",
+        "shape": [
+          8
+        ],
+        "scale": 0.04364,
+        "levels": 45
+      },
+      {
+        "name": "out",
+        "shape": [
+          39
+        ],
+        "scale": 0.2313,
+        "levels": 45
+      },
+      {
+        "name": "output",
+        "shape": [
+          39,
+          8
+        ],
+        "scale": 0.1444,
+        "levels": 45
+      }
+    ],
+    "zxing_exact": true,
+    "node_bpc": 2.679087256684976,
+    "validation_chars": 2521,
+    "probability_comparisons": 98319,
+    "max_logprob_error": 1.687538997430238e-14,
+    "novel_pct": 98.75,
+    "over24_pct": 12.1,
+    "samples": [
+      "glm-3.6-12-7b-gt-4b",
+      "gemini-3-fp2",
+      "vaimoniro-flash",
+      "qwen3.1-1.1-70b-s",
+      "cyrastra-70b-ins-hininist",
+      "glam-4.6-0-lash",
+      "qwen4.52.5-fast",
+      "flash-5",
+      "motrchax-ppraipt",
+      "code-code-lates"
+    ],
+    "sample_count": 2000,
+    "sample_seed": 1,
+    "sample_temperature": 0.8,
+    "longest_sample": 42,
+    "rng_draws": 35074
+  },
+  {
+    "url_sha256": "18fc70d4090c791af601ec694e59baf7c9612fc03c87cacc38ac2e5728b1e275",
+    "model": "tf8f24_out_s0",
+    "kind": "tf",
+    "config": {
+      "d": 8,
+      "f": 24,
+      "heads": 2,
+      "q": 2,
+      "levels": 61,
+      "norm": false,
+      "context": 24,
+      "layers": 1,
+      "slope": 1.0,
+      "value": false,
+      "untie": true,
+      "window": 1
+    },
+    "params": 1151,
+    "levels": 61,
+    "program_chars": 902,
+    "weight_digits": 2056,
+    "payload_bytes": 2961,
+    "url_chars": 2984,
+    "qr_version": 31,
+    "data_bits": 14278,
+    "slack_bits": 466,
+    "segments": [
+      "alnum:22",
+      "byte:906",
+      "numeric:2056"
+    ],
+    "val_bpc": 2.704240266187071,
+    "tensors": [
+      {
+        "name": "emb",
+        "shape": [
+          39,
+          8
+        ],
+        "scale": 0.09664,
+        "levels": 61
+      },
+      {
+        "name": "pos",
+        "shape": [
+          8
+        ],
+        "scale": 0.01489,
+        "levels": 61
+      },
+      {
+        "name": "qk",
+        "shape": [
+          8,
+          8
+        ],
+        "scale": 0.05583,
+        "levels": 61
+      },
+      {
+        "name": "w1",
+        "shape": [
+          24,
+          8
+        ],
+        "scale": 0.1306,
+        "levels": 61
+      },
+      {
+        "name": "b1",
+        "shape": [
+          24
+        ],
+        "scale": 0.07642,
+        "levels": 61
+      },
+      {
+        "name": "w2",
+        "shape": [
+          8,
+          24
+        ],
+        "scale": 0.04499,
+        "levels": 61
+      },
+      {
+        "name": "b2",
+        "shape": [
+          8
+        ],
+        "scale": 0.01968,
+        "levels": 61
+      },
+      {
+        "name": "out",
+        "shape": [
+          39
+        ],
+        "scale": 0.1428,
+        "levels": 61
+      },
+      {
+        "name": "output",
+        "shape": [
+          39,
+          8
+        ],
+        "scale": 0.07407,
+        "levels": 61
+      }
+    ],
+    "zxing_exact": true,
+    "node_bpc": 2.70424026618708,
+    "validation_chars": 2521,
+    "probability_comparisons": 98319,
+    "max_logprob_error": 6.572520305780927e-14,
+    "novel_pct": 98.65,
+    "over24_pct": 3.2,
+    "samples": [
+      "fw-k-ins-gpt-shluct",
+      "elama-coder3-vlewuurucbash",
+      "derh",
+      "rat",
+      "gema-4-5.7",
+      "cyiietote-36b",
+      "llamaba-constraruct",
+      "gab-3-3-fpp8b",
+      "gtema-2.5",
+      "deak-ll-frieremrconca-7b"
+    ],
+    "sample_count": 2000,
+    "sample_seed": 1,
+    "sample_temperature": 0.8,
+    "longest_sample": 32,
+    "rng_draws": 33190
+  },
+  {
+    "url_sha256": "8f28efa45f45f23e44d361ca9e448f7091f3ef92d08c7390de2948338d0614f7",
+    "model": "tf16f16_sin_lsq31_warm_s0",
+    "kind": "tf",
+    "config": {
+      "d": 16,
+      "f": 16,
+      "heads": 1,
+      "q": 4,
+      "levels": 31,
+      "norm": true,
+      "context": 0,
+      "layers": 1,
+      "slope": 1.0,
+      "value": false,
+      "untie": false,
+      "window": 1,
+      "sinpos": true,
+      "lsq": true
+    },
+    "params": 1351,
+    "levels": 31,
+    "program_chars": 917,
+    "weight_digits": 2015,
+    "payload_bytes": 2935,
+    "url_chars": 2958,
+    "qr_version": 31,
+    "data_bits": 14261,
+    "slack_bits": 483,
+    "segments": [
+      "alnum:22",
+      "byte:921",
+      "numeric:2015"
+    ],
+    "val_bpc": 2.7113545649410327,
+    "tensors": [
+      {
+        "name": "emb",
+        "shape": [
+          39,
+          16
+        ],
+        "scale": 0.0978,
+        "levels": 31
+      },
+      {
+        "name": "pos",
+        "shape": [
+          16
+        ],
+        "scale": 0.02254,
+        "levels": 31
+      },
+      {
+        "name": "qk",
+        "shape": [
+          8,
+          16
+        ],
+        "scale": 0.04142,
+        "levels": 31
+      },
+      {
+        "name": "w1",
+        "shape": [
+          16,
+          16
+        ],
+        "scale": 0.1115,
+        "levels": 31
+      },
+      {
+        "name": "b1",
+        "shape": [
+          16
+        ],
+        "scale": 0.08678,
+        "levels": 31
+      },
+      {
+        "name": "w2",
+        "shape": [
+          16,
+          16
+        ],
+        "scale": 0.1225,
+        "levels": 31
+      },
+      {
+        "name": "b2",
+        "shape": [
+          16
+        ],
+        "scale": 0.08837,
+        "levels": 31
+      },
+      {
+        "name": "out",
+        "shape": [
+          39
+        ],
+        "scale": 0.1527,
+        "levels": 31
+      }
+    ],
+    "zxing_exact": true,
+    "node_bpc": 2.7113545649410353,
+    "validation_chars": 2521,
+    "probability_comparisons": 98319,
+    "max_logprob_error": 5.1514348342607263e-14,
+    "novel_pct": 99.45,
+    "over24_pct": 2.6,
+    "samples": [
+      "deni-4.5",
+      "llama-v5-marcat",
+      "minins-isstrus-stainct",
+      "llama-sam-instestl",
+      "cwndaturde.midfin",
+      "llamatri-8",
+      "llama--4.1-3-flast",
+      "grok-4.7-00b",
+      "llam-kma-pprt-pre.",
+      "llama-3-7b-instrucg"
+    ],
+    "sample_count": 2000,
+    "sample_seed": 1,
+    "sample_temperature": 0.8,
+    "longest_sample": 33,
+    "rng_draws": 32314
+  },
+  {
+    "url_sha256": "d413b0f9aede6aa6cc6d531217181a03939fde5cb0ce255080e3502a6e247131",
+    "model": "tf12f20_norm_s0",
+    "kind": "tf",
+    "config": {
+      "d": 12,
+      "f": 20,
+      "heads": 2,
+      "q": 2,
+      "levels": 61,
+      "norm": true,
+      "context": 24,
+      "layers": 1,
+      "slope": 1.0,
+      "value": false,
+      "untie": false
+    },
+    "params": 1127,
+    "levels": 61,
+    "program_chars": 965,
+    "weight_digits": 2013,
+    "payload_bytes": 2981,
+    "url_chars": 3004,
+    "qr_version": 31,
+    "data_bits": 14638,
+    "slack_bits": 106,
+    "segments": [
+      "alnum:22",
+      "byte:969",
+      "numeric:2013"
+    ],
+    "val_bpc": 2.716500933755789,
+    "tensors": [
+      {
+        "name": "emb",
+        "shape": [
+          39,
+          12
+        ],
+        "scale": 0.07965,
+        "levels": 61
+      },
+      {
+        "name": "pos",
+        "shape": [
+          12
+        ],
+        "scale": 0.009333,
+        "levels": 61
+      },
+      {
+        "name": "qk",
+        "shape": [
+          8,
+          12
+        ],
+        "scale": 0.03354,
+        "levels": 61
+      },
+      {
+        "name": "w1",
+        "shape": [
+          20,
+          12
+        ],
+        "scale": 0.1099,
+        "levels": 61
+      },
+      {
+        "name": "b1",
+        "shape": [
+          20
+        ],
+        "scale": 0.0513,
+        "levels": 61
+      },
+      {
+        "name": "w2",
+        "shape": [
+          12,
+          20
+        ],
+        "scale": 0.06661,
+        "levels": 61
+      },
+      {
+        "name": "b2",
+        "shape": [
+          12
+        ],
+        "scale": 0.03021,
+        "levels": 61
+      },
+      {
+        "name": "out",
+        "shape": [
+          39
+        ],
+        "scale": 0.1296,
+        "levels": 61
+      }
+    ],
+    "zxing_exact": true,
+    "node_bpc": 2.7165009337557846,
+    "validation_chars": 2521,
+    "probability_comparisons": 98319,
+    "max_logprob_error": 3.197442310920451e-14,
+    "novel_pct": 98.25,
+    "over24_pct": 3.35,
+    "samples": [
+      "ek-mani-1.2",
+      "llatepest",
+      "claude-llansh",
+      "gunituarie-3.7-1b",
+      "qwen2-ma-mit",
+      "cxm2-5b-init-ins-8b-cinst",
+      "gllma-5.2",
+      "gpt-5.5-cotrax",
+      "llama3-3.0-7b",
+      "coodeps-v2.5-2"
+    ],
+    "sample_count": 2000,
+    "sample_seed": 1,
+    "sample_temperature": 0.8,
+    "longest_sample": 37,
+    "rng_draws": 29936
+  },
+  {
+    "url_sha256": "c733ba0054d06d0e164e64787879048b6bdd86b1788dfaea7bd2cb4384446abe",
+    "model": "tf12f16_norm91_s0",
+    "kind": "tf",
+    "config": {
+      "d": 12,
+      "f": 16,
+      "heads": 1,
+      "q": 4,
+      "levels": 91,
+      "norm": true,
+      "context": 0,
+      "layers": 1,
+      "slope": 1.0,
+      "value": false,
+      "untie": false,
+      "window": 1,
+      "sinpos": false
+    },
+    "params": 1027,
+    "levels": 91,
+    "program_chars": 900,
+    "weight_digits": 2013,
+    "payload_bytes": 2916,
+    "url_chars": 2939,
+    "qr_version": 31,
+    "data_bits": 14118,
+    "slack_bits": 626,
+    "segments": [
+      "alnum:22",
+      "byte:904",
+      "numeric:2013"
+    ],
+    "val_bpc": 2.718863448901251,
+    "tensors": [
+      {
+        "name": "emb",
+        "shape": [
+          39,
+          12
+        ],
+        "scale": 0.05787,
+        "levels": 91
+      },
+      {
+        "name": "pos",
+        "shape": [
+          12
+        ],
+        "scale": 0.00705,
+        "levels": 91
+      },
+      {
+        "name": "qk",
+        "shape": [
+          8,
+          12
+        ],
+        "scale": 0.02694,
+        "levels": 91
+      },
+      {
+        "name": "w1",
+        "shape": [
+          16,
+          12
+        ],
+        "scale": 0.07852,
+        "levels": 91
+      },
+      {
+        "name": "b1",
+        "shape": [
+          16
+        ],
+        "scale": 0.03476,
+        "levels": 91
+      },
+      {
+        "name": "w2",
+        "shape": [
+          12,
+          16
+        ],
+        "scale": 0.04972,
+        "levels": 91
+      },
+      {
+        "name": "b2",
+        "shape": [
+          12
+        ],
+        "scale": 0.03277,
+        "levels": 91
+      },
+      {
+        "name": "out",
+        "shape": [
+          39
+        ],
+        "scale": 0.1054,
+        "levels": 91
+      }
+    ],
+    "zxing_exact": true,
+    "node_bpc": 2.7188634489012493,
+    "validation_chars": 2521,
+    "probability_comparisons": 98319,
+    "max_logprob_error": 2.6645352591003757e-14,
+    "novel_pct": 98.2,
+    "over24_pct": 2.8,
+    "samples": [
+      "glm-2.5-130b-latruct",
+      "dagemininp5-v2-3fp8b-a-7",
+      "gemmi-tat",
+      "gak-mi-gpt",
+      "cyiiinter-30b-inge-t",
+      "okllama-llami-00b",
+      "gemmistrall-feshat",
+      "gpt-5.3",
+      "monistron-stralr",
+      "cqwen3.5-263b-i"
+    ],
+    "sample_count": 2000,
+    "sample_seed": 1,
+    "sample_temperature": 0.8,
+    "longest_sample": 29,
+    "rng_draws": 32498
+  },
+  {
+    "url_sha256": "113d3197198fea0ee82bfee668aa64906951845926bffa4bc653dc8961e5be50",
+    "model": "tf16f16_sin_lsq31_s0",
+    "kind": "tf",
+    "config": {
+      "d": 16,
+      "f": 16,
+      "heads": 1,
+      "q": 4,
+      "levels": 31,
+      "norm": true,
+      "context": 0,
+      "layers": 1,
+      "slope": 1.0,
+      "value": false,
+      "untie": false,
+      "window": 1,
+      "sinpos": true,
+      "lsq": true
+    },
+    "params": 1351,
+    "levels": 31,
+    "program_chars": 916,
+    "weight_digits": 2015,
+    "payload_bytes": 2934,
+    "url_chars": 2957,
+    "qr_version": 31,
+    "data_bits": 14253,
+    "slack_bits": 491,
+    "segments": [
+      "alnum:22",
+      "byte:920",
+      "numeric:2015"
+    ],
+    "val_bpc": 2.735767940041958,
+    "tensors": [
+      {
+        "name": "emb",
+        "shape": [
+          39,
+          16
+        ],
+        "scale": 0.08578,
+        "levels": 31
+      },
+      {
+        "name": "pos",
+        "shape": [
+          16
+        ],
+        "scale": 0.02254,
+        "levels": 31
+      },
+      {
+        "name": "qk",
+        "shape": [
+          8,
+          16
+        ],
+        "scale": 0.03949,
+        "levels": 31
+      },
+      {
+        "name": "w1",
+        "shape": [
+          16,
+          16
+        ],
+        "scale": 0.1085,
+        "levels": 31
+      },
+      {
+        "name": "b1",
+        "shape": [
+          16
+        ],
+        "scale": 0.09401,
+        "levels": 31
+      },
+      {
+        "name": "w2",
+        "shape": [
+          16,
+          16
+        ],
+        "scale": 0.1026,
+        "levels": 31
+      },
+      {
+        "name": "b2",
+        "shape": [
+          16
+        ],
+        "scale": 0.1038,
+        "levels": 31
+      },
+      {
+        "name": "out",
+        "shape": [
+          39
+        ],
+        "scale": 0.147,
+        "levels": 31
+      }
+    ],
+    "zxing_exact": true,
+    "node_bpc": 2.7357679400419497,
+    "validation_chars": 2521,
+    "probability_comparisons": 98319,
+    "max_logprob_error": 2.4868995751603507e-14,
+    "novel_pct": 98.7,
+    "over24_pct": 2.6,
+    "samples": [
+      "glm-4.5-150b-inxtruct",
+      "codestrardev2.2fpext",
+      "gpt-4.6-1b-l5b",
+      "glm-4.5-1-visept-5-2b-ins-4-5",
+      "mistral-larlib",
+      "gpt-4.5-hitentro",
+      "llam-4.1-8b-15b-flast",
+      "mish",
+      "ki-1pckonli-1b-ins",
+      "matapiede-3.5-visres"
+    ],
+    "sample_count": 2000,
+    "sample_seed": 1,
+    "sample_temperature": 0.8,
+    "longest_sample": 34,
+    "rng_draws": 32263
+  },
+  {
+    "url_sha256": "5d2da63352f5172aacf7d24f44e6a7880d8a441348c553adbac3b9a827571fe3",
+    "model": "tf12f20_l2_s0",
+    "kind": "tf",
+    "config": {
+      "d": 12,
+      "f": 20,
+      "heads": 2,
+      "q": 2,
+      "levels": 61,
+      "norm": false,
+      "context": 24,
+      "layers": 2,
+      "slope": 1.0,
+      "value": false,
+      "untie": false
+    },
+    "params": 1127,
+    "levels": 61,
+    "program_chars": 943,
+    "weight_digits": 2013,
+    "payload_bytes": 2959,
+    "url_chars": 2982,
+    "qr_version": 31,
+    "data_bits": 14462,
+    "slack_bits": 282,
+    "segments": [
+      "alnum:22",
+      "byte:947",
+      "numeric:2013"
+    ],
+    "val_bpc": 2.7559844230303563,
+    "tensors": [
+      {
+        "name": "emb",
+        "shape": [
+          39,
+          12
+        ],
+        "scale": 0.0521,
+        "levels": 61
+      },
+      {
+        "name": "pos",
+        "shape": [
+          12
+        ],
+        "scale": 0.005375,
+        "levels": 61
+      },
+      {
+        "name": "qk",
+        "shape": [
+          8,
+          12
+        ],
+        "scale": 0.06016,
+        "levels": 61
+      },
+      {
+        "name": "w1",
+        "shape": [
+          20,
+          12
+        ],
+        "scale": 0.08437,
+        "levels": 61
+      },
+      {
+        "name": "b1",
+        "shape": [
+          20
+        ],
+        "scale": 0.04003,
+        "levels": 61
+      },
+      {
+        "name": "w2",
+        "shape": [
+          12,
+          20
+        ],
+        "scale": 0.03317,
+        "levels": 61
+      },
+      {
+        "name": "b2",
+        "shape": [
+          12
+        ],
+        "scale": 0.02004,
+        "levels": 61
+      },
+      {
+        "name": "out",
+        "shape": [
+          39
+        ],
+        "scale": 0.1838,
+        "levels": 61
+      }
+    ],
+    "zxing_exact": true,
+    "node_bpc": 2.7559844230303536,
+    "validation_chars": 2521,
+    "probability_comparisons": 98319,
+    "max_logprob_error": 3.197442310920451e-14,
+    "novel_pct": 97.6,
+    "over24_pct": 3.4,
+    "samples": [
+      "glm-115-06-flast-lash",
+      "coden-dlla-v3.3.8-st",
+      "gpt-4-praume-4",
+      "gemma-fp1",
+      "yininto-5-pro",
+      "gemmma-3.8",
+      "glm-5-5.2",
+      "gpt-4",
+      "noinstruites",
+      "se"
+    ],
+    "sample_count": 2000,
+    "sample_seed": 1,
+    "sample_temperature": 0.8,
+    "longest_sample": 32,
+    "rng_draws": 29363
+  },
+  {
+    "url_sha256": "bff0aeaa19cc951c7ba87fc6e3a7ffab6af07a3cda616f91ee1762d12a9098b7",
+    "model": "tf12f20_win3_norm31_s0",
+    "kind": "tf",
+    "config": {
+      "d": 12,
+      "f": 20,
+      "heads": 2,
+      "q": 2,
+      "levels": 31,
+      "norm": true,
+      "context": 0,
+      "layers": 1,
+      "slope": 1.0,
+      "value": false,
+      "untie": false,
+      "window": 3,
+      "sinpos": false
+    },
+    "params": 1127,
+    "levels": 31,
+    "program_chars": 972,
+    "weight_digits": 1681,
+    "payload_bytes": 2656,
+    "url_chars": 2679,
+    "qr_version": 30,
+    "data_bits": 13588,
+    "slack_bits": 292,
+    "segments": [
+      "alnum:22",
+      "byte:976",
+      "numeric:1681"
+    ],
+    "val_bpc": 2.7807583311566133,
+    "tensors": [
+      {
+        "name": "emb",
+        "shape": [
+          39,
+          12
+        ],
+        "scale": 0.1993,
+        "levels": 31
+      },
+      {
+        "name": "pos",
+        "shape": [
+          12
+        ],
+        "scale": 0.04003,
+        "levels": 31
+      },
+      {
+        "name": "qk",
+        "shape": [
+          8,
+          12
+        ],
+        "scale": 0.1067,
+        "levels": 31
+      },
+      {
+        "name": "w1",
+        "shape": [
+          20,
+          12
+        ],
+        "scale": 0.2208,
+        "levels": 31
+      },
+      {
+        "name": "b1",
+        "shape": [
+          20
+        ],
+        "scale": 0.1812,
+        "levels": 31
+      },
+      {
+        "name": "w2",
+        "shape": [
+          12,
+          20
+        ],
+        "scale": 0.2228,
+        "levels": 31
+      },
+      {
+        "name": "b2",
+        "shape": [
+          12
+        ],
+        "scale": 0.0877,
+        "levels": 31
+      },
+      {
+        "name": "out",
+        "shape": [
+          39
+        ],
+        "scale": 0.2936,
+        "levels": 31
+      }
+    ],
+    "zxing_exact": true,
+    "node_bpc": 2.7807583311566044,
+    "validation_chars": 2521,
+    "probability_comparisons": 98319,
+    "max_logprob_error": 2.3092638912203256e-14,
+    "novel_pct": 98,
+    "over24_pct": 8.8,
+    "samples": [
+      "glm-2.6-12000-ct-mt----mhst",
+      "gpt-52b-ixtrlo-mint-500",
+      "seeama-222",
+      "llamaxunepq-latest",
+      "latash-flash",
+      "coimini",
+      "gpt-5.7-mix-7w52240b",
+      "7w-3.5-latopcoasuk-mine-oaet",
+      "gemma-12b-indp4p8-code",
+      "gpt-usdp5.1"
+    ],
+    "sample_count": 2000,
+    "sample_seed": 1,
+    "sample_temperature": 0.8,
+    "longest_sample": 35,
+    "rng_draws": 34438
+  },
+  {
+    "url_sha256": "e50e01d3a4507934bb94637e85e515444cc4399ccd1ba37c27f0e36b4ab0bd2b",
+    "model": "tf16f16_norm31_s0",
+    "kind": "tf",
+    "config": {
+      "d": 16,
+      "f": 16,
+      "heads": 1,
+      "q": 4,
+      "levels": 31,
+      "norm": true,
+      "context": 0,
+      "layers": 1,
+      "slope": 1.0,
+      "value": false,
+      "untie": false,
+      "window": 1,
+      "sinpos": false
+    },
+    "params": 1351,
+    "levels": 31,
+    "program_chars": 897,
+    "weight_digits": 2015,
+    "payload_bytes": 2915,
+    "url_chars": 2938,
+    "qr_version": 31,
+    "data_bits": 14101,
+    "slack_bits": 643,
+    "segments": [
+      "alnum:22",
+      "byte:901",
+      "numeric:2015"
+    ],
+    "val_bpc": 2.794017968255718,
+    "tensors": [
+      {
+        "name": "emb",
+        "shape": [
+          39,
+          16
+        ],
+        "scale": 0.1546,
+        "levels": 31
+      },
+      {
+        "name": "pos",
+        "shape": [
+          16
+        ],
+        "scale": 0.04301,
+        "levels": 31
+      },
+      {
+        "name": "qk",
+        "shape": [
+          8,
+          16
+        ],
+        "scale": 0.06701,
+        "levels": 31
+      },
+      {
+        "name": "w1",
+        "shape": [
+          16,
+          16
+        ],
+        "scale": 0.2547,
+        "levels": 31
+      },
+      {
+        "name": "b1",
+        "shape": [
+          16
+        ],
+        "scale": 0.1638,
+        "levels": 31
+      },
+      {
+        "name": "w2",
+        "shape": [
+          16,
+          16
+        ],
+        "scale": 0.1752,
+        "levels": 31
+      },
+      {
+        "name": "b2",
+        "shape": [
+          16
+        ],
+        "scale": 0.09644,
+        "levels": 31
+      },
+      {
+        "name": "out",
+        "shape": [
+          39
+        ],
+        "scale": 0.3305,
+        "levels": 31
+      }
+    ],
+    "zxing_exact": true,
+    "node_bpc": 2.794017968255719,
+    "validation_chars": 2521,
+    "probability_comparisons": 98319,
+    "max_logprob_error": 1.865174681370263e-14,
+    "novel_pct": 99.15,
+    "over24_pct": 2.4,
+    "samples": [
+      "deeprok-1.0",
+      "llarmani-2-5",
+      "misont-5027bb-its",
+      "graniooh",
+      "sek-4-5-medr-v0",
+      "yrok-v3-70b-insronn",
+      "ogstral",
+      "mistra-3-1-3-chatruct",
+      "llaman2-7-flaserustruct",
+      "oni-1-8-1b"
+    ],
+    "sample_count": 2000,
+    "sample_seed": 1,
+    "sample_temperature": 0.8,
+    "longest_sample": 30,
+    "rng_draws": 32683
+  },
+  {
+    "url_sha256": "31c80fe9fad714bbf2f1ea55146010c941d1e889e4811645c3aefec65974a376",
+    "model": "tf12f20_s0",
+    "kind": "tf",
+    "config": {
+      "d": 12,
+      "f": 20,
+      "heads": 2,
+      "q": 2,
+      "levels": 61,
+      "norm": false,
+      "context": 24,
+      "layers": 1,
+      "slope": 1.0,
+      "value": false,
+      "untie": false
+    },
+    "params": 1127,
+    "levels": 61,
+    "program_chars": 893,
+    "weight_digits": 2013,
+    "payload_bytes": 2909,
+    "url_chars": 2932,
+    "qr_version": 31,
+    "data_bits": 14062,
+    "slack_bits": 682,
+    "segments": [
+      "alnum:22",
+      "byte:897",
+      "numeric:2013"
+    ],
+    "val_bpc": 2.7962831745773538,
+    "tensors": [
+      {
+        "name": "emb",
+        "shape": [
+          39,
+          12
+        ],
+        "scale": 0.06589,
+        "levels": 61
+      },
+      {
+        "name": "pos",
+        "shape": [
+          12
+        ],
+        "scale": 0.01557,
+        "levels": 61
+      },
+      {
+        "name": "qk",
+        "shape": [
+          8,
+          12
+        ],
+        "scale": 0.06449,
+        "levels": 61
+      },
+      {
+        "name": "w1",
+        "shape": [
+          20,
+          12
+        ],
+        "scale": 0.08306,
+        "levels": 61
+      },
+      {
+        "name": "b1",
+        "shape": [
+          20
+        ],
+        "scale": 0.02667,
+        "levels": 61
+      },
+      {
+        "name": "w2",
+        "shape": [
+          12,
+          20
+        ],
+        "scale": 0.05149,
+        "levels": 61
+      },
+      {
+        "name": "b2",
+        "shape": [
+          12
+        ],
+        "scale": 0.02521,
+        "levels": 61
+      },
+      {
+        "name": "out",
+        "shape": [
+          39
+        ],
+        "scale": 0.1192,
+        "levels": 61
+      }
+    ],
+    "zxing_exact": true,
+    "node_bpc": 2.7962831745773533,
+    "validation_chars": 2521,
+    "probability_comparisons": 98319,
+    "max_logprob_error": 2.842170943040401e-14,
+    "novel_pct": 98.6,
+    "over24_pct": 4.8,
+    "samples": [
+      "glm-4.5-13-7b-3b-322",
+      "das-llamaralufl-xlated-iastruchi",
+      "qwen3-ingpt-1",
+      "xophitre-3b-gesph",
+      "qwen3p5-5",
+      "minite",
+      "gpt-4-miniuphos-at",
+      "qwen3-72b-14b-fp2",
+      "seek-3",
+      "llami-4.21-70b"
+    ],
+    "sample_count": 2000,
+    "sample_seed": 1,
+    "sample_temperature": 0.8,
+    "longest_sample": 33,
+    "rng_draws": 32212
+  },
+  {
+    "url_sha256": "c5689d49bc5d0d82b321999cedbc4a2ea4e92c7eed0098b05390501a17873dba",
+    "model": "tf12f24_sin45_warm_s0",
+    "kind": "tf",
+    "config": {
+      "d": 12,
+      "f": 24,
+      "heads": 1,
+      "q": 4,
+      "levels": 45,
+      "norm": true,
+      "context": 0,
+      "layers": 1,
+      "slope": 1.0,
+      "value": false,
+      "untie": false,
+      "window": 1,
+      "sinpos": true
+    },
+    "params": 1227,
+    "levels": 45,
+    "program_chars": 914,
+    "weight_digits": 2029,
+    "payload_bytes": 2946,
+    "url_chars": 2969,
+    "qr_version": 31,
+    "data_bits": 14284,
+    "slack_bits": 460,
+    "segments": [
+      "alnum:22",
+      "byte:918",
+      "numeric:2029"
+    ],
+    "val_bpc": 2.868576459051081,
+    "tensors": [
+      {
+        "name": "emb",
+        "shape": [
+          39,
+          12
+        ],
+        "scale": 0.1183,
+        "levels": 45
+      },
+      {
+        "name": "pos",
+        "shape": [
+          12
+        ],
+        "scale": 0.03525,
+        "levels": 45
+      },
+      {
+        "name": "qk",
+        "shape": [
+          8,
+          12
+        ],
+        "scale": 0.0462,
+        "levels": 45
+      },
+      {
+        "name": "w1",
+        "shape": [
+          24,
+          12
+        ],
+        "scale": 0.1807,
+        "levels": 45
+      },
+      {
+        "name": "b1",
+        "shape": [
+          24
+        ],
+        "scale": 0.1138,
+        "levels": 45
+      },
+      {
+        "name": "w2",
+        "shape": [
+          12,
+          24
+        ],
+        "scale": 0.1651,
+        "levels": 45
+      },
+      {
+        "name": "b2",
+        "shape": [
+          12
+        ],
+        "scale": 0.03852,
+        "levels": 45
+      },
+      {
+        "name": "out",
+        "shape": [
+          39
+        ],
+        "scale": 0.2183,
+        "levels": 45
+      }
+    ],
+    "zxing_exact": true,
+    "node_bpc": 2.868576459051076,
+    "validation_chars": 2521,
+    "probability_comparisons": 98319,
+    "max_logprob_error": 1.9539925233402755e-14,
+    "novel_pct": 99.05,
+    "over24_pct": 4.65,
+    "samples": [
+      "glm-2-code-5.6",
+      "vok-lagalasoderr-3p4-fr",
+      "qwen3.5-27b",
+      "code-lama2-26b-1-v34b-p5",
+      "kistral-7b-initruct",
+      "omima-1-b-de-ninstrur-insmin",
+      "gpmini-1.7-flatr-sep",
+      "code-v3-33b",
+      "gek-lam-5-prnistructruut",
+      "qwen-3.20b-insrctrubminst"
+    ],
+    "sample_count": 2000,
+    "sample_seed": 1,
+    "sample_temperature": 0.8,
+    "longest_sample": 36,
+    "rng_draws": 32487
+  },
+  {
+    "url_sha256": "1cadc996fa20296c68ba06616f2d85ebf68505e43add44b6f332d7e44c49fc9b",
+    "model": "tf12f24_sin_norm31_s0",
+    "kind": "tf",
+    "config": {
+      "d": 12,
+      "f": 24,
+      "heads": 1,
+      "q": 4,
+      "levels": 31,
+      "norm": true,
+      "context": 0,
+      "layers": 1,
+      "slope": 1.0,
+      "value": false,
+      "untie": false,
+      "window": 1,
+      "sinpos": true
+    },
+    "params": 1227,
+    "levels": 31,
+    "program_chars": 913,
+    "weight_digits": 1831,
+    "payload_bytes": 2747,
+    "url_chars": 2770,
+    "qr_version": 30,
+    "data_bits": 13616,
+    "slack_bits": 264,
+    "segments": [
+      "alnum:22",
+      "byte:917",
+      "numeric:1831"
+    ],
+    "val_bpc": 2.868952672491951,
+    "tensors": [
+      {
+        "name": "emb",
+        "shape": [
+          39,
+          12
+        ],
+        "scale": 0.1974,
+        "levels": 31
+      },
+      {
+        "name": "pos",
+        "shape": [
+          12
+        ],
+        "scale": 0.04482,
+        "levels": 31
+      },
+      {
+        "name": "qk",
+        "shape": [
+          8,
+          12
+        ],
+        "scale": 0.06446,
+        "levels": 31
+      },
+      {
+        "name": "w1",
+        "shape": [
+          24,
+          12
+        ],
+        "scale": 0.2814,
+        "levels": 31
+      },
+      {
+        "name": "b1",
+        "shape": [
+          24
+        ],
+        "scale": 0.2677,
+        "levels": 31
+      },
+      {
+        "name": "w2",
+        "shape": [
+          12,
+          24
+        ],
+        "scale": 0.2272,
+        "levels": 31
+      },
+      {
+        "name": "b2",
+        "shape": [
+          12
+        ],
+        "scale": 0.1288,
+        "levels": 31
+      },
+      {
+        "name": "out",
+        "shape": [
+          39
+        ],
+        "scale": 0.328,
+        "levels": 31
+      }
+    ],
+    "zxing_exact": true,
+    "node_bpc": 2.868952672491953,
+    "validation_chars": 2521,
+    "probability_comparisons": 98319,
+    "max_logprob_error": 2.1316282072803006e-14,
+    "novel_pct": 99.05,
+    "over24_pct": 1.85,
+    "samples": [
+      "demi-k3-12",
+      "gpt-psek2-1",
+      "gemi-k3.2",
+      "sermses33",
+      "granitra",
+      "qwek-1.1-7-hit",
+      "cyonitracodet-flasot",
+      "mistral-lerdba",
+      "gpt-5.5-int-4pronidpt",
+      "dedema-12b-fp8-p5-gen2-f"
+    ],
+    "sample_count": 2000,
+    "sample_seed": 1,
+    "sample_temperature": 0.8,
+    "longest_sample": 33,
+    "rng_draws": 29970
+  },
+  {
+    "url_sha256": "4e7e3bd130c28b1af7887103542effc2b51456917dca34fd9d94a6fdda75823d",
+    "model": "tf12f16_l2_norm45_h1_s0",
+    "kind": "tf",
+    "config": {
+      "d": 12,
+      "f": 16,
+      "heads": 1,
+      "q": 4,
+      "levels": 45,
+      "norm": true,
+      "context": 0,
+      "layers": 2,
+      "slope": 1.0,
+      "value": false,
+      "untie": false,
+      "window": 1,
+      "sinpos": false
+    },
+    "params": 1027,
+    "levels": 45,
+    "program_chars": 947,
+    "weight_digits": 1698,
+    "payload_bytes": 2648,
+    "url_chars": 2671,
+    "qr_version": 30,
+    "data_bits": 13444,
+    "slack_bits": 436,
+    "segments": [
+      "alnum:22",
+      "byte:951",
+      "numeric:1698"
+    ],
+    "val_bpc": 2.89175074786913,
+    "tensors": [
+      {
+        "name": "emb",
+        "shape": [
+          39,
+          12
+        ],
+        "scale": 0.1143,
+        "levels": 45
+      },
+      {
+        "name": "pos",
+        "shape": [
+          12
+        ],
+        "scale": 0.01921,
+        "levels": 45
+      },
+      {
+        "name": "qk",
+        "shape": [
+          8,
+          12
+        ],
+        "scale": 0.06039,
+        "levels": 45
+      },
+      {
+        "name": "w1",
+        "shape": [
+          16,
+          12
+        ],
+        "scale": 0.1132,
+        "levels": 45
+      },
+      {
+        "name": "b1",
+        "shape": [
+          16
+        ],
+        "scale": 0.05584,
+        "levels": 45
+      },
+      {
+        "name": "w2",
+        "shape": [
+          12,
+          16
+        ],
+        "scale": 0.08966,
+        "levels": 45
+      },
+      {
+        "name": "b2",
+        "shape": [
+          12
+        ],
+        "scale": 0.0261,
+        "levels": 45
+      },
+      {
+        "name": "out",
+        "shape": [
+          39
+        ],
+        "scale": 0.1584,
+        "levels": 45
+      }
+    ],
+    "zxing_exact": true,
+    "node_bpc": 2.8917507478691338,
+    "validation_chars": 2521,
+    "probability_comparisons": 98319,
+    "max_logprob_error": 2.1316282072803006e-14,
+    "novel_pct": 98.9,
+    "over24_pct": 1.65,
+    "samples": [
+      "glm-1-li",
+      "iimistral-fas",
+      "gemimal-3-v4.5k-itrept",
+      "gemma-pla",
+      "gemar.1-8b",
+      "cyrepst-ineston-1.7b",
+      "mitral-1.6",
+      "gpt",
+      "gpt-5-8b-fp8",
+      "tenmi-te"
+    ],
+    "sample_count": 2000,
+    "sample_seed": 1,
+    "sample_temperature": 0.8,
+    "longest_sample": 31,
+    "rng_draws": 29519
+  },
+  {
+    "url_sha256": "0a83d88c9d8db3ff52a5f8af3e518f64bec5f1518c588d46093b8564c435cee7",
+    "model": "tf12f16_l2_norm31_s0",
+    "kind": "tf",
+    "config": {
+      "d": 12,
+      "f": 16,
+      "heads": 2,
+      "q": 2,
+      "levels": 31,
+      "norm": true,
+      "context": 0,
+      "layers": 2,
+      "slope": 1.0,
+      "value": false,
+      "untie": false,
+      "window": 1
+    },
+    "params": 1027,
+    "levels": 31,
+    "program_chars": 999,
+    "weight_digits": 1532,
+    "payload_bytes": 2534,
+    "url_chars": 2557,
+    "qr_version": 30,
+    "data_bits": 13307,
+    "slack_bits": 573,
+    "segments": [
+      "alnum:22",
+      "byte:1003",
+      "numeric:1532"
+    ],
+    "val_bpc": 2.8969953647843387,
+    "tensors": [
+      {
+        "name": "emb",
+        "shape": [
+          39,
+          12
+        ],
+        "scale": 0.2111,
+        "levels": 31
+      },
+      {
+        "name": "pos",
+        "shape": [
+          12
+        ],
+        "scale": 0.03842,
+        "levels": 31
+      },
+      {
+        "name": "qk",
+        "shape": [
+          8,
+          12
+        ],
+        "scale": 0.08847,
+        "levels": 31
+      },
+      {
+        "name": "w1",
+        "shape": [
+          16,
+          12
+        ],
+        "scale": 0.2345,
+        "levels": 31
+      },
+      {
+        "name": "b1",
+        "shape": [
+          16
+        ],
+        "scale": 0.07884,
+        "levels": 31
+      },
+      {
+        "name": "w2",
+        "shape": [
+          12,
+          16
+        ],
+        "scale": 0.129,
+        "levels": 31
+      },
+      {
+        "name": "b2",
+        "shape": [
+          12
+        ],
+        "scale": 0.08289,
+        "levels": 31
+      },
+      {
+        "name": "out",
+        "shape": [
+          39
+        ],
+        "scale": 0.1733,
+        "levels": 31
+      }
+    ],
+    "zxing_exact": true,
+    "node_bpc": 2.896995364784343,
+    "validation_chars": 2521,
+    "probability_comparisons": 98319,
+    "max_logprob_error": 2.3092638912203256e-14,
+    "novel_pct": 99.45,
+    "over24_pct": 2.35,
+    "samples": [
+      "glm-2-lacodeestus",
+      "phamam-k3-33b",
+      "grem-vlmix-m4",
+      "lama-14-m.5",
+      "geprasis",
+      "cwea250b-ict-flanteu",
+      "qwen3-3",
+      "npsosn",
+      "gpham-k3-8ck3b-insttr",
+      "gp8-77b"
+    ],
+    "sample_count": 2000,
+    "sample_seed": 1,
+    "sample_temperature": 0.8,
+    "longest_sample": 30,
+    "rng_draws": 32246
+  }
+]

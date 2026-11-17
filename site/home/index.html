@@ -1,0 +1,307 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>This QR code is a language model</title>
+<meta name="description" content="A small neural network that invents AI model names, packed into a QR code. Scan it and it runs in your browser. Bigger links hold bigger models.">
+<meta property="og:title" content="This QR code is a language model">
+<meta property="og:description" content="Scan it and it runs in your browser. No server, no download. Bigger links hold bigger models.">
+<meta property="og:image" content="https://q.shayon.work/img/og.png">
+<meta property="og:url" content="https://q.shayon.work/">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="stylesheet" href="page.css?v=7">
+</head>
+<body>
+<div class="wrap">
+
+<header>
+  <h1>This QR code is a language model</h1>
+  <p class="kicker">1,984 weights, 444 characters of JavaScript, no server</p>
+  <p class="byline"><a href="https://shayon.work">Shayon</a> · November 2026</p>
+</header>
+
+<div class="hero">
+  <figure class="qr">
+    <img src="../img/qr.png" width="870" height="870" alt="QR code containing the whole model">
+    <figcaption>Point your phone camera at it.</figcaption>
+  </figure>
+  <div>
+    <p class="names-label">Or watch it run here, from the same link:</p>
+    <ol class="names" id="names" aria-live="polite"></ol>
+  </div>
+</div>
+
+<p class="lead">So what language does it model? The names of AI models. It read 1,215 real ones, like <code>gpt-4o-mini</code> and <code>claude-3-5-sonnet</code>, and now it makes up its own. A few are better than the real thing.</p>
+
+<p class="body">Nothing runs on a server. The QR code is a link, and everything after the <code>#</code> in that link is the model: 444 characters of JavaScript and 1,984 weights. Browsers don't send that part of a link to the server, so all q.shayon.work does is hand out a small page that reads the model from the address bar and runs it.</p>
+
+<section id="try">
+  <p class="part">Part 1 · The QR code</p>
+  <h2>Give it a start</h2>
+  <p class="body">Type the beginning of a name and the model writes the rest.</p>
+  <div class="toy">
+    <input id="toy-input" type="text" value="claude-" maxlength="14" autocomplete="off" autocapitalize="off" autocorrect="off" spellcheck="false" aria-label="Start of a name">
+    <button class="btn primary" id="toy-go" type="button">Finish it</button>
+  </div>
+  <p class="presets" id="presets">Or try
+    <button class="chip" type="button" data-start="gpt-">gpt-</button>
+    <button class="chip" type="button" data-start="llama">llama</button>
+    <button class="chip" type="button" data-start="deepseek-">deepseek-</button>
+    <button class="chip" type="button" data-start="q">q</button>
+    <button class="chip plain" type="button" data-start="">nothing at all</button>
+  </p>
+  <p class="toy-name" id="toy-name" aria-live="polite">&nbsp;</p>
+  <div class="odds" id="odds" hidden>
+    <p class="odds-title" id="odds-title"></p>
+    <ol class="odds-rows" id="odds-rows"></ol>
+  </div>
+  <p class="small" id="toy-hint" hidden>Tap any letter to see what the model was choosing between at that point.</p>
+  <p class="body">That's all a language model does. It looks at what's written so far, gives every possible next character a probability, picks one, and goes again. The large models work the same way, with pieces of words instead of characters and billions of weights instead of 1,984.</p>
+  <p class="body">This one is tiny, but it's the real thing. It's the design Bengio and his colleagues described in 2003, in a paper called &ldquo;A Neural Probabilistic Language Model&rdquo;.</p>
+</section>
+
+<section id="how">
+  <h2>How it works</h2>
+
+  <h3>The link</h3>
+  <p class="body">The link has four parts.</p>
+  <div class="anatomy" role="img" aria-label="The link: address, program length, program, weights">
+    <div class="part-host"><code>HTTPS://Q.SHAYON.WORK/#</code><span>address</span></div>
+    <div class="part-len"><code>444</code><span>program length</span></div>
+    <div class="part-prog"><code>for(n=BigInt(d),W=[],i=1984;…</code><span>program, 444 characters</span></div>
+    <div class="part-data"><code>8998716153969059216126…</code><span>weights, 2,959 digits</span></div>
+  </div>
+  <p class="body">The address is in capitals because QR codes have a compact mode for capital letters, and the scheme and host of a URL don't care about case. The three digits after the <code>#</code> tell the page where the program ends and the weights begin.</p>
+  <details class="whole">
+    <summary>Show the whole link, all 3,429 characters</summary>
+    <div class="link-block" id="link-block" role="img" aria-label="The full link, coloured by part">Loading…</div>
+  </details>
+
+  <h3>The weights</h3>
+  <p class="body">The network was trained so that every weight is a whole number from &minus;15 to 15. That's 31 possible values, so each weight can be one digit of a number written in base 31. Here it is with the first three weights in the link:</p>
+  <div class="table-wrap">
+    <table class="worked">
+      <tbody>
+        <tr><th>Three weights</th><td>&minus;8</td><td>&minus;4</td><td>&minus;5</td></tr>
+        <tr><th>Add 15 to each</th><td>7</td><td>11</td><td>10</td></tr>
+        <tr><th>Read as one number in base 31</th><td colspan="3">7 × 31² + 11 × 31 + 10 = 7,078</td></tr>
+      </tbody>
+    </table>
+  </div>
+  <p class="body">Do that with all 1,984 weights and the number is 2,959 digits long:</p>
+  <p class="pack-number" id="pack-number">8998716153969059216126347890566834857996904478345096280655978142 …</p>
+  <p class="body">It's stored in decimal because digits are what QR codes store best: 10 bits for every 3 digits. My first version wrote one character per weight, and it needed a much bigger code.</p>
+  <div class="table-wrap">
+    <table class="layout">
+      <thead><tr><th>How a weight is written</th><th>Bits in the QR code</th><th>What fits</th></tr></thead>
+      <tbody>
+        <tr><td>One character, 61 levels</td><td>8.0</td><td>1,689 weights in a version 36 code</td></tr>
+        <tr><td>One big number, 61 levels</td><td>6.0</td><td>1,689 weights in version 30</td></tr>
+        <tr><td>One big number, 31 levels</td><td>5.0</td><td>1,984 weights in version 30</td></tr>
+      </tbody>
+    </table>
+  </div>
+  <p class="body">The last row is the one in the code above. Coarser weights, but more of them, made a better model. The first line of the program turns the number back into weights:</p>
+  <pre class="code">for (n = BigInt(d), W = [], i = 1984; i--; )
+  W[i] = Number(n - (n /= 31n) * 31n) - 15;</pre>
+  <p class="body"><code>d</code> is the string of digits. Each step divides by 31. The remainder is one weight, and the rest of the number is kept for the next one.</p>
+
+  <h3>The network</h3>
+  <p class="body">It writes one character at a time. To pick the next one, it looks at the last three characters it wrote and at how long the name is so far.</p>
+  <div class="flow" role="img" aria-label="Last three characters, to 18 numbers, to 29 hidden units, to 39 probabilities, to the next character">
+    <div class="flow-box">
+      <p class="flow-big"><kbd>m</kbd><kbd>i</kbd><kbd>n</kbd></p>
+      <p class="flow-label">last three characters</p>
+    </div>
+    <div class="flow-box">
+      <p class="flow-big">18 + 1</p>
+      <p class="flow-label">six numbers per character, plus the length so far</p>
+    </div>
+    <div class="flow-box">
+      <p class="flow-big">29</p>
+      <p class="flow-label">hidden units, each a weighted sum through <code>tanh</code></p>
+    </div>
+    <div class="flow-box">
+      <p class="flow-big">39</p>
+      <p class="flow-label">probabilities, one per character it knows</p>
+    </div>
+    <div class="flow-box out">
+      <p class="flow-big"><kbd>i</kbd></p>
+      <p class="flow-label">picked at random, in proportion</p>
+    </div>
+  </div>
+  <p class="body">The 39 characters are a to z, 0 to 9, dash, dot and an end marker. When it picks the end marker, the name is done. The length input is what stops it from writing names that go on forever.</p>
+  <p class="body">Here is the whole network, drawn from the link in the QR code. Every line is one weight.</p>
+  <figure class="net">
+    <div class="net-scroll"><svg id="net-names" viewBox="0 0 640 330" role="img" aria-label="The network: 19 inputs, 29 hidden units and 39 outputs, with a line for every weight"></svg></div>
+    <figcaption>Blue lines push a unit up and orange lines push it down. Stronger lines are bigger weights. That's 1,682 of the 1,984. The rest are the 234 numbers that turn three characters into the dots at the top, and 68 biases.</figcaption>
+  </figure>
+  <p class="body">All of it lives in one flat list:</p>
+  <div class="table-wrap">
+    <table class="layout">
+      <thead><tr><th>Weights</th><th>Count</th><th>What they are</th></tr></thead>
+      <tbody>
+        <tr><td>0–233</td><td>39 × 6</td><td>Six numbers for each character</td></tr>
+        <tr><td>234–784</td><td>29 × 19</td><td>Hidden layer: 18 inputs and the length, for each unit</td></tr>
+        <tr><td>785–813</td><td>29</td><td>Hidden biases</td></tr>
+        <tr><td>814–1944</td><td>39 × 29</td><td>Output layer</td></tr>
+        <tr><td>1945–1983</td><td>39</td><td>Output biases</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <h3>Where it runs</h3>
+  <p class="body">On your phone, and nowhere else. A browser splits every link in two before it asks for a page:</p>
+  <div class="split" role="img" aria-label="What is sent to the server and what stays on your device">
+    <div>
+      <p class="split-label">Sent to the server</p>
+      <p class="split-code"><code>https://q.shayon.work/</code></p>
+    </div>
+    <div class="kept">
+      <p class="split-label">Stays on your phone</p>
+      <p class="split-code"><code>#444for(n=BigInt(d),W=[],i=1984;… 8998716153…</code></p>
+    </div>
+  </div>
+  <ol class="steps">
+    <li>Your camera reads the QR code. All it sees is a link, so it opens it in your browser.</li>
+    <li>The server gets a request for an empty address and sends back the same 11 KB page it sends for every link. It never sees the model.</li>
+    <li>That page reads the rest of the link from the address bar, splits off the program and runs it. It also shows each name and asks for a new one when you tap, which saves room in the QR code.</li>
+    <li>The model runs as plain JavaScript. A name takes about 30,000 multiplications, which is nothing for a phone. There's no GPU, no WebAssembly and no library.</li>
+  </ol>
+</section>
+
+<p class="aside-hire"><a href="#hire">Enjoying this? You might enjoy working with me too. <span aria-hidden="true">↓</span></a></p>
+
+<section id="ladder">
+  <p class="part">Part 2 · Longer links</p>
+  <h2>If not a QR code, how about a link?</h2>
+  <p class="body">A QR code holds about 3 KB, and that's the only reason the model above is so small. A link you click has no such limit. It can be as long as the browser will put up with, so I measured how long that is.</p>
+  <ol class="scale" aria-label="Link sizes, drawn to scale">
+    <li><span class="scale-name">The QR code</span><span class="scale-bar"><i style="width:.17%"></i></span><span class="scale-size">3.5 KB</span></li>
+    <li><span class="scale-name">A longer link</span><span class="scale-bar"><i style="width:3.2%"></i></span><span class="scale-size">64 KB</span></li>
+    <li><span class="scale-name">Firefox gives up</span><span class="scale-bar"><i style="width:50%"></i></span><span class="scale-size">1 MB</span></li>
+    <li><span class="scale-name">Chrome gives up</span><span class="scale-bar"><i style="width:100%"></i></span><span class="scale-size">2 MB</span></li>
+  </ol>
+  <p class="body">That's room for a model 300 times bigger. So here is the same job at three link sizes. The job is writing children's stories, learned from TinyStories, a dataset of simple stories made for training small models. All three are running on your device right now, straight from their links.</p>
+
+  <p class="run-all"><button class="btn primary big" id="run-all" type="button">Write three new stories</button></p>
+
+  <ol class="ladder">
+    <li class="rung" data-model="../data/payloads/qrstory_url.txt">
+      <div class="rung-head">
+        <p class="rung-size">3.5 KB</p>
+        <span class="rung-what">1,895 weights · would fit in a QR code</span>
+      </div>
+      <p class="rung-link" aria-hidden="true"></p>
+      <p class="rung-desc">It has read a great many children's stories and come away knowing that they contain words.</p>
+      <div class="story waiting" aria-live="polite">Waiting to start…</div>
+      <div class="actions">
+        <button class="btn primary again" type="button" disabled>Write another</button>
+        <a class="btn open" href="#" target="_blank" rel="noopener">Open this link <span aria-hidden="true">↗</span></a>
+        <span class="speed" aria-hidden="true"></span>
+      </div>
+    </li>
+    <li class="rung" data-model="../data/payloads/t64kfix_url.txt">
+      <div class="rung-head">
+        <p class="rung-size">64 KB</p>
+        <span class="rung-what">90,420 weights</span>
+      </div>
+      <p class="rung-link" aria-hidden="true"></p>
+      <p class="rung-desc">It starts sentences well and loses them halfway through.</p>
+      <div class="story waiting" aria-live="polite">Waiting to start…</div>
+      <div class="actions">
+        <button class="btn primary again" type="button" disabled>Write another</button>
+        <a class="btn open" href="#" target="_blank" rel="noopener">Open this link <span aria-hidden="true">↗</span></a>
+        <span class="speed" aria-hidden="true"></span>
+      </div>
+    </li>
+    <li class="rung" data-model="../data/payloads/big2_url.txt">
+      <div class="rung-head">
+        <p class="rung-size">1 MB</p>
+        <span class="rung-what">1,498,640 weights</span>
+      </div>
+      <p class="rung-link" aria-hidden="true"></p>
+      <p class="rung-desc">Its sentences mostly work. Its plots don't.</p>
+      <div class="story waiting" aria-live="polite">Waiting to start…</div>
+      <div class="actions">
+        <button class="btn primary again" type="button" disabled>Write another</button>
+        <a class="btn open" href="#" target="_blank" rel="noopener">Open this link <span aria-hidden="true">↗</span></a>
+        <span class="speed" aria-hidden="true"></span>
+      </div>
+    </li>
+  </ol>
+
+  <p class="body" style="margin-top:1.5rem">The first one is why the QR code writes model names and not stories. A name is a dozen characters with a few habits, like a dash, a version number and a size. That is about as much as 2,000 weights can hold.</p>
+  <p class="body">The last one is about as far as this goes. Its link is 1,010,424 characters, just under what Firefox will open.</p>
+
+  <h3>What's inside the bigger ones</h3>
+  <p class="body">The 3.5 KB story model is the same kind of network as the one in the QR code, with 33 characters and 32 hidden units. This is its link, drawn the same way:</p>
+  <figure class="net">
+    <div class="net-scroll"><svg id="net-story" viewBox="0 0 640 330" role="img" aria-label="The 3.5 KB story network: 18 inputs, 32 hidden units and 33 outputs"></svg></div>
+    <figcaption>1,632 lines, plus 198 numbers for the characters and 65 biases, makes 1,895 weights.</figcaption>
+  </figure>
+  <p class="body">The 64 KB and 1 MB models are transformers, the same kind of network as the large chat models, only small. The 64 KB one has 2 layers and the 1 MB one has 4. Each layer has 4 attention heads, and the model can look back over the last 128 characters. Every weight is stored in 4 bits, and the program that runs them is about 2 KB of JavaScript at the front of the link. The 1 MB model trained for a little over three hours on two CPU cores.</p>
+  <div class="tf-cols">
+    <div class="tf">
+      <p class="tf-title">64 KB</p>
+      <div class="tf-box"><b>Last 128 characters</b></div>
+      <div class="tf-box"><b>Embedding</b><span>67 characters × 60 numbers</span><i>4,020</i></div>
+      <div class="tf-layer"><p>Layer 1 <i>43,200</i></p><div class="tf-box"><b>Attention</b><span>4 heads</span></div><div class="tf-box"><b>Feed-forward</b><span>60 → 240 → 60</span></div></div>
+      <div class="tf-layer"><p>Layer 2 <i>43,200</i></p><div class="tf-box"><b>Attention</b><span>4 heads</span></div><div class="tf-box"><b>Feed-forward</b><span>60 → 240 → 60</span></div></div>
+      <div class="tf-box"><b>Output</b><span>reuses the embedding</span><i>0</i></div>
+      <div class="tf-box out"><b>67 probabilities</b><span>pick the next character</span></div>
+      <p class="tf-total">90,420 weights</p>
+    </div>
+    <div class="tf">
+      <p class="tf-title">1 MB</p>
+      <div class="tf-box"><b>Last 128 characters</b></div>
+      <div class="tf-box"><b>Embedding</b><span>67 characters × 176 numbers</span><i>11,792</i></div>
+      <div class="tf-layer"><p>Layer 1 <i>371,712</i></p><div class="tf-box"><b>Attention</b><span>4 heads</span></div><div class="tf-box"><b>Feed-forward</b><span>176 → 704 → 176</span></div></div>
+      <div class="tf-layer"><p>Layer 2 <i>371,712</i></p><div class="tf-box"><b>Attention</b><span>4 heads</span></div><div class="tf-box"><b>Feed-forward</b><span>176 → 704 → 176</span></div></div>
+      <div class="tf-layer"><p>Layer 3 <i>371,712</i></p><div class="tf-box"><b>Attention</b><span>4 heads</span></div><div class="tf-box"><b>Feed-forward</b><span>176 → 704 → 176</span></div></div>
+      <div class="tf-layer"><p>Layer 4 <i>371,712</i></p><div class="tf-box"><b>Attention</b><span>4 heads</span></div><div class="tf-box"><b>Feed-forward</b><span>176 → 704 → 176</span></div></div>
+      <div class="tf-box"><b>Output</b><span>reuses the embedding</span><i>0</i></div>
+      <div class="tf-box out"><b>67 probabilities</b><span>pick the next character</span></div>
+      <p class="tf-total">1,498,640 weights</p>
+    </div>
+  </div>
+  <p class="small">The numbers on the right are weights. Each layer adds its result to what came in. There is no table of positions: each attention head has a fixed preference for nearby characters instead, and the output step reuses the embedding, so neither costs anything in the link.</p>
+  <p class="body">The model in the QR code is not a transformer. I tried. With 2,000 weights, attention has to pay for its own machinery before it predicts anything, and every transformer I trained at that size lost to the plain network from 2003. So did recurrent networks, and so did predicting pieces of words instead of characters. At 64 KB there's room for attention to earn its keep.</p>
+</section>
+
+<section>
+  <h2>Notes</h2>
+  <ul class="notes">
+    <li>Your camera doesn't run anything. It opens the link like any other link, and the page runs the model.</li>
+    <li>I've tested this in Chrome, Firefox and Safari's engine on a desktop and scanned the code with real phones, but not with many. If the code doesn't scan, or the model doesn't run on yours, I'd like to know which phone it is.</li>
+    <li>Long links don't survive everywhere. Plenty of apps cut them short, and the 1 MB one is a lot to paste into a chat.</li>
+    <li>This was built with Fable 5.2 orchestrating other Claudes and Codex and Grok, with frequent prompting and steering for &ldquo;taste&rdquo;.</li>
+    <li>If you are a recruiter or a random company trying to promote this project, PLEASE don't email me.</li>
+  </ul>
+</section>
+
+<aside class="work-note" id="hire" aria-labelledby="work-heading">
+  <h2 id="work-heading">Building something ambitious?</h2>
+  <p>I'm Shayon, a generalist AI-native software engineer based in Berlin. I thrive in high-agency, low-bullshit environments, and I love taking on creative, challenging problems, like this one.</p>
+  <p>At cybersecurity startup Tenzir, I built and shipped the entire frontend and platform single-handedly in eight months, then hired and scaled the team. All of that was before AI coding tools.</p>
+  <p>I'm looking for my next role, Berlin or remote. If you're building something cool and need an engineer, get in touch. If you know someone who is, send them this.</p>
+  <div class="links">
+    <a href="mailto:hi@shayon.work">Get in touch <span aria-hidden="true">↗</span></a>
+    <a href="https://github.com/dit7ya">GitHub &amp; CV <span aria-hidden="true">↗</span></a>
+  </div>
+</aside>
+
+<footer>
+  <div class="links">
+    <a href="https://shayon.work">shayon.work</a>
+    <a href="https://github.com/dit7ya/link-sized-models">Code</a>
+    <a href="mailto:hi@shayon.work">Email</a>
+  </div>
+  <p class="copy">© 2026 Shayon</p>
+</footer>
+
+</div>
+<script src="page.js?v=5"></script>
+</body>
+</html>

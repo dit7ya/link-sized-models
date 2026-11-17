@@ -1,0 +1,29 @@
+// Exact executable, expanded with whitespace only. See docs/RESULTS_qrtf.md.
+for(n=BigInt(d),W=[],i=1984;
+i--;
+)W[i]=Number(n-(n/=31n)*31n)-15;
+g=_=>{
+  with(Math)for(x=[0,0,0],o='';
+  ;
+  ){
+    for(H=[],j=0;
+    j<29;
+    j++)for(a=W[785+j]*.165+W[252+j*19]*o.length*.0167,i=0;
+    i<18;
+    i++)H[j]=tanh(a+=W[234+j*19+i]*W[x[t=i/6|0]*6+i-t*6]*.0272);
+    for(p=[],t=j=0;
+    j<39;
+    j++){
+      for(a=W[1945+j]*.169,i=0;
+      i<29;
+      i++)a+=W[814+j*29+i]*H[i]*.116;
+      t+=p[j]=exp(a)
+    }
+    for(r=random()*t,j=0;
+    (r-=p[j])>0;
+    j++);
+    if(!j)return o;
+    o+='-.'[j-1]||(j-3).toString(36);
+    x=[x[1],x[2],j]
+  }
+}

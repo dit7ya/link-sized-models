@@ -1,0 +1,96 @@
+{
+  "url_sha256": "bee6ce3810889c552e3c75fb3bf545b9628560f08ea8f3cdeeec809a6f9503b0",
+  "model": "mlp31_h29_lsq_fine_s0",
+  "kind": "mlp",
+  "config": {
+    "e": 6,
+    "h": 29,
+    "levels": 31,
+    "k": 3,
+    "lsq": true
+  },
+  "params": 1984,
+  "levels": 31,
+  "program_chars": 444,
+  "weight_digits": 2959,
+  "payload_bytes": 3406,
+  "url_chars": 3429,
+  "qr_version": 30,
+  "data_bits": 13624,
+  "slack_bits": 256,
+  "segments": [
+    "alnum:22",
+    "byte:448",
+    "numeric:2959"
+  ],
+  "val_bpc": 2.3132517229241176,
+  "tensors": [
+    {
+      "name": "emb",
+      "shape": [
+        39,
+        6
+      ],
+      "scale": 0.2039,
+      "levels": 31
+    },
+    {
+      "name": "w1",
+      "shape": [
+        29,
+        19
+      ],
+      "scale": 0.1333,
+      "levels": 31
+    },
+    {
+      "name": "b1",
+      "shape": [
+        29
+      ],
+      "scale": 0.1645,
+      "levels": 31
+    },
+    {
+      "name": "w2",
+      "shape": [
+        39,
+        29
+      ],
+      "scale": 0.09294,
+      "levels": 31
+    },
+    {
+      "name": "b2",
+      "shape": [
+        39
+      ],
+      "scale": 0.1349,
+      "levels": 31
+    }
+  ],
+  "zxing_exact": true,
+  "node_bpc": 2.313251722924116,
+  "validation_chars": 2521,
+  "probability_comparisons": 98319,
+  "max_logprob_error": 1.0658141036401503e-14,
+  "novel_pct": 96.9,
+  "over24_pct": 5.15,
+  "samples": [
+    "glm-3.5-12b-instruct",
+    "claude-3.7",
+    "grok-v4pbo-code",
+    "llame-k2-1-2b-barn",
+    "ctainite-chat-6",
+    "claude-spar-1.5-fladast",
+    "glm-5.8-coder-1p5",
+    "fw",
+    "llama3.3-maxn",
+    "opeg-m3-1b-chat"
+  ],
+  "sample_count": 2000,
+  "sample_seed": 1,
+  "sample_temperature": 0.8,
+  "longest_sample": 33,
+  "rng_draws": 32965
+}

@@ -1,0 +1,13 @@
+/*
+  Content-Security-Policy: default-src 'none'; script-src 'self' 'unsafe-inline' 'unsafe-eval'; style-src 'self' 'unsafe-inline'; img-src 'self'; font-src 'self'; connect-src 'self'; frame-src 'self'; frame-ancestors 'self'; base-uri 'none'; object-src 'none'; form-action 'none'
+  X-Content-Type-Options: nosniff
+  Referrer-Policy: no-referrer
+  Cache-Control: public, max-age=300, must-revalidate
+
+/data/payloads/*
+  ! Cache-Control
+  Cache-Control: public, max-age=86400, must-revalidate
+
+/img/*
+  ! Cache-Control
+  Cache-Control: public, max-age=86400, must-revalidate

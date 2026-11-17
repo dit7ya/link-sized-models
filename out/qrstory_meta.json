@@ -1,0 +1,47 @@
+{
+  "model": "qrstory_L31_h32_k3_e6.pt",
+  "architecture": "MLP: previous 3 chars x embedding 6 -> 32 tanh -> 33 softmax",
+  "config": {
+    "e": 6,
+    "h": 32,
+    "k": 3,
+    "levels": 31
+  },
+  "weights": 1895,
+  "levels": 31,
+  "program_chars": 499,
+  "digits": 2827,
+  "url_chars": 3352,
+  "qr_version": 30,
+  "ecc": "L",
+  "data_bits": 13624,
+  "capacity_bits": 13880,
+  "slack_bits": 256,
+  "segments": [
+    "alnum:22",
+    "byte:503",
+    "numeric:2827"
+  ],
+  "alphabet": " .,\"'!?abcdefghijklmnopqrstuvwxyz",
+  "alphabet_note": "lowercased; curly quotes->straight; : ; -> comma; dashes/newlines -> space; other chars dropped; spaces collapsed. Output capitalises the first letter and letters after \". \", \"! \", \"? \".",
+  "heldout_bpc_reduced_alphabet": 2.4798050396148206,
+  "heldout_chars": 499166,
+  "heldout_note": "data/heldout.u8 (fixed 500k-char TinyStoriesV2 validation benchmark) after the reduced-alphabet mapping; exported quantised weights, temperature 1; not comparable with bigger tiers (different alphabet)",
+  "select_bpc": 2.4857365875269988,
+  "temperature": 0.7,
+  "sample_length": 220,
+  "train_data": "first 12 MiB of TinyStoriesV2-GPT4-train.txt, 95% of stories for training, last 5% for checkpoint selection",
+  "zxing_exact": true,
+  "max_logprob_error": 1.7763568394002505e-14,
+  "probability_comparisons": 108900,
+  "forced_sequences": 15,
+  "node_bpc_T1_on_fixture": 2.368324143341641,
+  "sample_seed": 7,
+  "samples": [
+    "Outh wankson one dise and bud neane fun care box you was miakned the to sue. He cared so had box do ben the rark the wis toor watcing in a tim you it unned in. The said, \"when a tide. Site was have and want and little bu",
+    "One do askere and thictliry to gillowed it from hane if weaped he tice look mood more best to player parced a tim the pake and the was and want to gett to it was very out and to the ret he creald do it bofd a beted the b",
+    "Hro you fronext mach, her in and wore the was hapt the big did. Shar whe pow the said was moo happy want tim the she betu the was to happy trery not had that ham and loand the say aro com was the as clog. Happy day upod ",
+    "On a liresun a sats not and lrill to mavy lore. The do that let're named and she. Ming to, friend and do the was to gist and tom wist wittle boy to maded to woot a said, \"i play was ved and and not tim do and you peadded",
+    "On his to play and tim day tha. He of to had askear. He said, \"y was sue found do the she poom and saw a biry a day, one dead fror the his not a want the box when and was did the a wit lax they the reald a tim day fore d"
+  ]
+}

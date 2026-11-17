@@ -1,0 +1,108 @@
+{
+  "url_sha256": "4e1556333191d774d20f36cedceb55c46ae3545b50efddc184ed6c17592843f8",
+  "model": "tap21_h25_lsq_fresh_s0",
+  "kind": "tap",
+  "config": {
+    "e": 6,
+    "h": 25,
+    "levels": 21,
+    "k": 3,
+    "q": 1,
+    "slope": 6.0,
+    "skip": 0.0,
+    "lsq": true
+  },
+  "params": 1772,
+  "levels": 21,
+  "program_chars": 732,
+  "weight_digits": 2344,
+  "payload_bytes": 3079,
+  "url_chars": 3102,
+  "qr_version": 30,
+  "data_bits": 13878,
+  "slack_bits": 2,
+  "segments": [
+    "alnum:22",
+    "byte:736",
+    "numeric:2344"
+  ],
+  "val_bpc": 2.4174611346918,
+  "tensors": [
+    {
+      "name": "emb",
+      "shape": [
+        39,
+        6
+      ],
+      "scale": 0.2078,
+      "levels": 21
+    },
+    {
+      "name": "w1",
+      "shape": [
+        25,
+        19
+      ],
+      "scale": 0.1664,
+      "levels": 21
+    },
+    {
+      "name": "b1",
+      "shape": [
+        25
+      ],
+      "scale": 0.2525,
+      "levels": 21
+    },
+    {
+      "name": "w2",
+      "shape": [
+        39,
+        25
+      ],
+      "scale": 0.1126,
+      "levels": 21
+    },
+    {
+      "name": "b2",
+      "shape": [
+        39
+      ],
+      "scale": 0.1347,
+      "levels": 21
+    },
+    {
+      "name": "qk",
+      "shape": [
+        4,
+        6
+      ],
+      "scale": 0.0622,
+      "levels": 21
+    }
+  ],
+  "zxing_exact": true,
+  "node_bpc": 2.4174611346917967,
+  "validation_chars": 2521,
+  "probability_comparisons": 98319,
+  "max_logprob_error": 1.0658141036401503e-14,
+  "novel_pct": 97.9,
+  "over24_pct": 4.3,
+  "samples": [
+    "flas5-kimi-k24-tuh",
+    "kimax-mini-o-ow-sotast",
+    "deepseek-2eis",
+    "gemistral-1-vl-3b-instruct",
+    "claude-ount-1.7",
+    "gro-code-25b-it",
+    "grok-4-ss",
+    "deepseed-spard-r1-707",
+    "llamba-3-coder-4-3",
+    "mistral-mediumtrbn2"
+  ],
+  "sample_count": 2000,
+  "sample_seed": 1,
+  "sample_temperature": 0.8,
+  "longest_sample": 35,
+  "rng_draws": 33333
+}

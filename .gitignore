@@ -1,0 +1,17 @@
+__pycache__/
+.venv/
+.uv-cache/
+.cloudflare/
+# Downloaded TinyStories text and encoded benchmark (stories/get_data.py).
+/data/
+# Training runs and per-run exports. The four published links and the QR story
+# checkpoint in out/ are tracked explicitly.
+out/*.pt
+out/*.pt.tmp
+out/*.png
+out/*.log
+out/*_history.json
+names/qrtf_runs/
+# Launch drafts stay local.
+LAUNCH.md
+LAUNCH_POST_NOTES.md
