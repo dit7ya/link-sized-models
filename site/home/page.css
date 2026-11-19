@@ -26,6 +26,9 @@
   --note-accent: #2563eb;
   --note-link: #1d4ed8;
   --on-link: #fff;
+  --orbit-1: #2563eb1f;
+  --orbit-2: #2563ebd9;
+  --orbit-3: #93c5fdf2;
   --pick-bg: #eff6ff;
   color-scheme: light;
 }
@@ -50,6 +53,9 @@
     --note-accent: #60a5fa;
     --note-link: #93c5fd;
     --on-link: #000;
+    --orbit-1: #60a5fa1f;
+    --orbit-2: #60a5fad9;
+    --orbit-3: #dbeafef2;
     --pick-bg: #0c1426;
     color-scheme: dark;
   }
@@ -688,3 +694,36 @@ kbd {
 .aside-hire { margin: 4rem 0 0; padding: 1rem 0; border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); font-size: 1rem; }
 html { scroll-behavior: smooth; }
 @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
+
+/* The pointer to the hiring note: centred, with an arrow that nods. */
+.aside-hire { text-align: center; padding: 1.25rem 0; }
+.aside-hire a { font-weight: 500; }
+.aside-hire a:hover { text-decoration: none; }
+.aside-hire .bob { display: inline-block; margin-left: .25em; }
+
+/* A slow light travelling round the hiring note while it is on screen. */
+@property --note-angle { syntax: "<angle>"; inherits: false; initial-value: 0deg; }
+.work-note { position: relative; isolation: isolate; border-left-width: 1px; border-radius: .375rem; }
+.work-note::after {
+  content: '';
+  position: absolute;
+  inset: -1px;
+  z-index: -1;
+  padding: 1px;
+  border-radius: inherit;
+  pointer-events: none;
+  background: conic-gradient(from var(--note-angle), transparent 0deg 285deg, var(--orbit-1) 305deg, var(--orbit-2) 338deg, var(--orbit-3) 348deg, transparent 360deg);
+  -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  mask-composite: exclude;
+  opacity: .55;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .aside-hire .bob { animation: bob 1.8s ease-in-out infinite; }
+  @keyframes bob { 0%, 100% { transform: translateY(-1px); } 50% { transform: translateY(4px); } }
+  .work-note::after { opacity: 1; animation: note-orbit 14s linear infinite paused; }
+  .work-note.in-view::after { animation-play-state: running; }
+  @keyframes note-orbit { to { --note-angle: 360deg; } }
+}

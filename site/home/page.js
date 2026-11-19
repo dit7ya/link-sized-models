@@ -96,6 +96,12 @@
       .observe(document.querySelector('.hero'));
   }
 
+  // The hiring note's border light only runs while the note is on screen.
+  const note = document.getElementById('hire');
+  if (note && 'IntersectionObserver' in window) {
+    new IntersectionObserver(entries => note.classList.toggle('in-view', entries[0].isIntersecting)).observe(note);
+  }
+
   // The full link, coloured by part: address, program length, program, weights.
   function renderLink(link) {
     const block = document.getElementById('link-block');
