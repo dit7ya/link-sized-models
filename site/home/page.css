@@ -727,3 +727,5 @@ html { scroll-behavior: smooth; }
   .work-note.in-view::after { animation-play-state: running; }
   @keyframes note-orbit { to { --note-angle: 360deg; } }
 }
+
+.discuss { margin: 2.5rem 0 0; font-size: 1rem; font-weight: 500; }
